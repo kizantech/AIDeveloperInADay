@@ -1,4 +1,4 @@
-### **[Home](./README.md)** 
+### **[Home](../../../../README.md)** 
 
 ---
 
@@ -254,4 +254,4 @@ This architecture showcases how Semantic Kernel's plugin system enables sophisti
 
 [Add native code as a plugin to Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-python)
 
-### [< Previous Challenge](./Challenge-06.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-08.md)
+### **[Home](../../../../README.md)**
