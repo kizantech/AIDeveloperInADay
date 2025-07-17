@@ -1,6 +1,6 @@
-### [< Previous Challenge](./Challenge-03.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-05.md)
+### **[Home](../README.md)** 
 
-# Challenge 04 -  Import Plugin using OpenAPI
+# Import Plugin using OpenAPI
 
 ## Introduction
 

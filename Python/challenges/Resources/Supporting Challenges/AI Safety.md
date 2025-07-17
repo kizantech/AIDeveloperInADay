@@ -1,6 +1,6 @@
-### [< Previous Challenge](./Challenge-05.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-07.md)
+### **[Home](./README.md)** 
 
-# Challenge 06 - Responsible AI: Exploring Content Filters in Azure AI Foundry
+# Responsible AI: Exploring Content Filters in Azure AI Foundry
 
 ## Introduction
 

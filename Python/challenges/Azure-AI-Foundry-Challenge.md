@@ -1,6 +1,6 @@
-### [< Previous Challenge](./Challenge-00.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-02.md)
+### **[Home](../README.md)** - [Next Challenge >](./Semantic-Kernel-Challenge.md)
 
-# Challenge 01 - Azure AI Foundry Fundamentals
+# Azure AI Foundry Fundamentals
 
 ## Introduction
 

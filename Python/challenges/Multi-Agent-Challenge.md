@@ -1,6 +1,6 @@
-### [< Previous Challenge](./Challenge-07.md) - **[Home](../README.md)**
+### [< Previous Challenge](./RAG-Challenge.md) - **[Home](../README.md)**
 
-# Challenge 08 - Multi-Agent Systems
+# Multi-Agent Systems
 
 ## Introduction
 

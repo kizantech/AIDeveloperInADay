@@ -1,8 +1,8 @@
-### [< Previous Challenge](./Challenge-06.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-08.md)
+### **[Home](./README.md)** 
 
 ---
 
-# Challenge 07 - Image Generation using DALL-E
+# Image Generation using DALL-E
 
 ## Introduction
 

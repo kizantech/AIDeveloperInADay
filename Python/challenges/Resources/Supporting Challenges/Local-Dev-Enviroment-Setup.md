@@ -1,6 +1,6 @@
-### **[Home](../README.md)** - [Next Challenge >](./Challenge-01.md)
+### **[Home](../README.md)**
 
-# Challenge 00 - Prerequisites - Ready, Set, GO!
+# Prerequisites - Ready, Set, GO!
 
 ## Introduction
 

@@ -1,6 +1,6 @@
-### [< Previous Challenge](./Challenge-04.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-06.md)
+### [< Previous Challenge](./SK-Plugins-Challenge.md) - **[Home](../README.md)** - [Next Challenge >](./Multi-Agent-Challenge.md)
 
-# Challenge 05 - RAG Pattern with Azure AI Search
+# RAG Pattern with Azure AI Search
 
 ## Introduction
 

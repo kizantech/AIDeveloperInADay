@@ -1,6 +1,6 @@
-### [< Previous Challenge](./Challenge-01.md) - [**Home**](../README.md) - [Next Challenge >](./Challenge-03.md)
+### [< Previous Challenge](./Azure-AI-Foundry-Challenge.md) - [**Home**](../README.md) - [Next Challenge >](./SK-Plugins-Challenge.md)
 
-# Challenge-02 - Semantic Kernel Fundamentals
+# Semantic Kernel Fundamentals
 
 ## Introduction
 

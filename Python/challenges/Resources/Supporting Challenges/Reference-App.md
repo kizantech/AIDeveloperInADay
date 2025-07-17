@@ -1,5 +1,3 @@
-### [< Back to Challenge 2](../../Challenge-02.md)
-
 # Getting Familiar With the Reference Application
 
 This application is a sample chat application designed to help you learn Semantic Kernel and Azure AI Foundry. It uses the Semantic Kernel framework to interact with Azure AI models and is hosted using Streamlit, a beginner-friendly Python web framework. 
