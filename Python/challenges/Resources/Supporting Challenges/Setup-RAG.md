@@ -60,11 +60,11 @@ Ensure all required settings are properly configured before proceeding to the ne
 
 1. In Azure AI Foundry click on Playground -> Chat Playground
 
-    ![Add Data Sournce](../image/ch05img0.png)
+    ![Add Data Source](../image/ch05img0.png)
 
 1. Ensure the correct model is selected under Deployment. Then click the drop down Add your data -> Add new data source
 
-    ![Add Data Sournce](../image/ch05img3.png)
+    ![Add Data Source](../image/ch05img3.png)
 
 1. Select Data Source = ```Upload Files```.
 
