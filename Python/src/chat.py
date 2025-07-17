@@ -14,9 +14,9 @@ from pathlib import Path
 
 from plugins.ai_search_plugin import AiSearchPlugin
 from plugins.geo_coding_plugin import GeoPlugin
-from plugins.image_plugin import ImagePlugin
-from plugins.time_plugin import TimePlugin
-from plugins.weather_plugin import WeatherPlugin
+# Uncomment the following after SK-Plugins-Challenge
+# from plugins.time_plugin import TimePlugin
+# from plugins.weather_plugin import WeatherPlugin
 
 # Add Logger
 logger = logging.getLogger(__name__)
