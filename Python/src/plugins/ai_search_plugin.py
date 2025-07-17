@@ -2,10 +2,9 @@ import os
 import sys
 from typing import TypedDict, Annotated
 from semantic_kernel.functions import kernel_function
-from semantic_kernel.connectors.memory.azure_ai_search import AzureAISearchCollection, AzureAISearchStore
-from semantic_kernel.connectors.memory.azure_ai_search.azure_ai_search_settings import AzureAISearchSettings
+from semantic_kernel.connectors.azure_ai_search import AzureAISearchCollection, AzureAISearchStore, AzureAISearchSettings
 from semantic_kernel.connectors.ai.open_ai import AzureTextEmbedding
-from semantic_kernel.data.vector_search import VectorSearchOptions
+from semantic_kernel.data.vector import VectorSearchOptions
 from semantic_kernel import Kernel
 
 from models.employee_handbook_model import EmployeeHandbookModel

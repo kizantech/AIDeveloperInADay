@@ -3,7 +3,7 @@ import logging
 from dotenv import load_dotenv
 from semantic_kernel import Kernel
 from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion, AzureTextToImage, AzureChatPromptExecutionSettings
-from semantic_kernel.connectors.memory.azure_ai_search import AzureAISearchStore
+from semantic_kernel.connectors.azure_ai_search import AzureAISearchStore
 from semantic_kernel.connectors.ai.function_choice_behavior import FunctionChoiceBehavior
 from semantic_kernel.connectors.openapi_plugin import OpenAPIFunctionExecutionParameters
 from semantic_kernel.connectors.ai.open_ai import AzureTextEmbedding

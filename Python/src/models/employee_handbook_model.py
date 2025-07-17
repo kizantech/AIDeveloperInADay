@@ -5,15 +5,12 @@ from dataclasses import dataclass
 from typing import Annotated, Any
 
 from pydantic import BaseModel
-
 from semantic_kernel.connectors.ai.open_ai import OpenAIEmbeddingPromptExecutionSettings
-from semantic_kernel.data import (
-    VectorStoreRecordDataField,
-    VectorStoreRecordKeyField,
-    VectorStoreRecordVectorField,
+from semantic_kernel.data.vector import (
+    VectorStoreField,
     vectorstoremodel,
+    FieldTypes
 )
-
 ###
 # The data model used for this sample is based on the hotel data model from the Azure AI Search samples.
 # When deploying a new index in Azure AI Search using the import wizard you can choose to deploy the 'hotel-samples'
@@ -28,18 +25,17 @@ from semantic_kernel.data import (
 @vectorstoremodel
 @dataclass
 class EmployeeHandbookModel(BaseModel):
-    chunk_id: Annotated[str, VectorStoreRecordKeyField]
-    content: Annotated[str, VectorStoreRecordDataField()]
-    title: Annotated[str, VectorStoreRecordDataField()]
-    url: Annotated[str, VectorStoreRecordDataField()]
-    filepath: Annotated[str, VectorStoreRecordDataField()]
-    parent_id: Annotated[str, VectorStoreRecordDataField()]
+    chunk_id: Annotated[str, VectorStoreField(field_type=FieldTypes.KEY)]
+    content: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
+    title: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
+    url: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
+    filepath: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
+    parent_id: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
     contentVector: Annotated[
         list[float] | None,
-        VectorStoreRecordVectorField(
-            dimensions=1536,
-            local_embedding=True,
-            embedding_settings={"embedding": OpenAIEmbeddingPromptExecutionSettings(dimensions=1536)},
+        VectorStoreField(
+            field_type=FieldTypes.VECTOR,
+            dimensions=1536
         ),
     ] = None
 
