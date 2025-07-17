@@ -189,4 +189,4 @@ VS Code provides powerful debugging capabilities that will help you troubleshoot
 **Tip**: If you ever see connection errors to `localhost:8000`, make sure you're using the compound launch profile for Challenge 4 and later!
 
 
-### [< Back to Challenge 2](../../Challenge-02.md)
+### [Home](../../../../README.md)

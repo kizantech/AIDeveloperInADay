@@ -1,4 +1,4 @@
-### **[Home](../README.md)** 
+### **[Home](../../../../README.md)** 
 
 # Import Plugin using OpenAPI
 
@@ -105,4 +105,4 @@ The dashed line shows how the functions registered during setup become available
 [OpenApiFunctionExecutionParameters](https://learn.microsoft.com/en-us/python/api/semantic-kernel/semantic_kernel.connectors.openapi_plugin.openapi_function_execution_parameters.openapifunctionexecutionparameters?view=semantic-kernel-python)
 
 
-### [< Previous Challenge](./Challenge-03.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-05.md)
+### **[Home](../../../../README.md)**

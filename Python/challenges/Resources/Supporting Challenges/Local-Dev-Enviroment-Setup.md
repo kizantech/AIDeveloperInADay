@@ -1,4 +1,4 @@
-### **[Home](../README.md)**
+### **[Home](../../../../README.md)**
 
 # Prerequisites - Ready, Set, GO!
 
@@ -64,4 +64,4 @@ The rest of the challenges will refer to the relative paths inside the Git Repos
           └───requirements.txt
   ```
 
-### **[Home](../README.md)** - [Next Challenge >](./Challenge-01.md)
+### **[Home](../../../../README.md)** 
