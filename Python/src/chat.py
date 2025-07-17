@@ -44,15 +44,15 @@ print("==============================================")
 chat_history = ChatHistory()
 
 def initialize_kernel():
-    #Challene 02 - Add Kernel
+    # Semantic-Kernel-Challenge - Add Kernel
 
-    #Challenge 02 - Chat Completion Service
-    #Challenge 02- Add kernel to the chat completion service
+    # Semantic-Kernel-Challenge - Chat Completion Service
+    # Semantic-Kernel-Challenge - Add kernel to the chat completion service
 
-    # Challenge 05 - Add Text Embedding Service
+    # RAG-Challenge - Add Text Embedding Service
 
 
-    # Challenge 07 - Add Text to Image Service
+    # Image-Generation - Add Text to Image Service
 
 
     return kernel
@@ -61,24 +61,24 @@ def initialize_kernel():
 async def process_message(user_input):
     kernel = initialize_kernel()
 
-    # Challenge 03 - Add Time Plugin
+    # SK-Plugins-Challenge - Add Time Plugin
 
 
-    # Challenge 03 - Add Geo Plugin
+    # SK-Plugins-Challenge - Add Geo Plugin
 
 
-    # CHallenge 03 - Add Weather Plugin
+    # SK-Plugins-Challenge - Add Weather Plugin
 
 
     # Challenge 04 - Import OpenAPI Spec
 
 
-    # Challenge 05 - Add Search Plugin
+    # RAG-Challenge - Add Search Plugin
 
 
-    # Challenge 07 - Text To Image Plugin
+    # Image-Generation - Text To Image Plugin
 
-    # Start Challenge 02
+    # Start Semantic-Kernel-Challenge
     
     # Get the chat completion service from the kernel
 
