@@ -74,13 +74,13 @@ class AiSearchPlugin:
                 print(f"Attempting to access collection: {collection_name}")
                 collection = self.store.get_collection(
                     collection_name=collection_name,
-                    data_model_type=EmployeeHandbookModel
+                    record_type=EmployeeHandbookModel
                 )
                 print(f"✅ Successfully accessed collection '{collection_name}'")
                 
                 # Try a simple operation with a small limit to test access
                 search_options = VectorSearchOptions(
-                    vector_field_name="contentVector",  # Specify which vector field to use
+                    vector_property_name="contentVector",  # Specify which vector field to use
                     top=1,  # Just get one result to verify access
                     include_vectors=False  # Don't need the vectors
                 )
@@ -93,9 +93,11 @@ class AiSearchPlugin:
                 
                 # Check for results
                 print("Executing vector search with test query...")
-                search_results = await collection.vectorized_search(
-                    vector=test_vector,
-                    options=search_options
+                search_results = await collection.search(
+                    vector=test_vector, 
+                    vector_field_name="contentVector",
+                    top=3,
+                    include_vectors=False
                 )
                 
                 result_count = 0
@@ -149,20 +151,22 @@ class AiSearchPlugin:
         # Get the collection
         collection: AzureAISearchCollection = self.store.get_collection(
             collection_name=collection_name,
-            data_model_type=EmployeeHandbookModel
+            record_type=EmployeeHandbookModel
         )
         
         # Create improved search options
         search_options = VectorSearchOptions(
-            vector_field_name="contentVector",  # Make sure this matches your index field name
+            vector_property_name="contentVector",  # Make sure this matches your index field name
             top=3,  # Retrieve top 3 results
             include_vectors=False  # We don't need the vectors in the results
         )
         
         print(f"Executing vector search with query: '{query_str}'")
-        search_results = await collection.vectorized_search(
+        search_results = await collection.search(
             vector=query_vector, 
-            options=search_options
+            vector_property_name="contentVector",
+            top=3,
+            include_vectors=False
         )
 
         result_list = []
@@ -171,7 +175,7 @@ class AiSearchPlugin:
             count += 1
             result_list.append(result)
             print(
-                f"Result {count}: {result.record.parent_id} (with {result.record.title}, score: {result.score})"
+                f"Result {count}: {result.record.id} (with {result.record.title}, score: {result.score})"
             )
             
         if count == 0:

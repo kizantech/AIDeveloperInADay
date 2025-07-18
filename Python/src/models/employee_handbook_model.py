@@ -25,12 +25,12 @@ from semantic_kernel.data.vector import (
 @vectorstoremodel
 @dataclass
 class EmployeeHandbookModel(BaseModel):
-    chunk_id: Annotated[str, VectorStoreField(field_type=FieldTypes.KEY)]
+    id: Annotated[str, VectorStoreField(field_type=FieldTypes.KEY)]
     content: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
     title: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
     url: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
     filepath: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
-    parent_id: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
+    meta_json_string: Annotated[str, VectorStoreField(field_type=FieldTypes.DATA)]
     contentVector: Annotated[
         list[float] | None,
         VectorStoreField(
