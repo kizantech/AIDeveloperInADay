@@ -1,15 +1,15 @@
-### **[Home](../README.md)** - [Next Challenge >](./Semantic-Kernel-Challenge.md)
+### **[Home](../../README.md)** - [Next Challenge >](./Semantic-Kernel-Challenge.md)
 
 # Azure AI Foundry Fundamentals
 
 ## Introduction
 
-The first step in understanding Azure AI Foundry is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure AI Foundry and how it can be used to build powerful AI infused applications. You will deploy a GPT-3.5 model and use the Azure AI Foundry Studio to interact with the model.
+The first step in understanding Azure AI Foundry is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure AI Foundry and how it can be used to build powerful AI infused applications. You will deploy a GPT-4o model and use the Azure AI Foundry Studio to interact with the model.
 
 ## Setup Azure AI Foundry
 
 1. Navigate to  [Azure AI Foundry](https://ai.azure.com) and login with your Azure credentials
-2. Deploy a ***Standard GPT3.5 Turbo*** model (version **0613** or greater) in a region that can host GTP-3.5, GPT-4o and DALL-E models
+2. Deploy a ***Standard GPT4o*** model in a region that can host GTP-4o, GPT-4.1 and DALL-E models
 
 ## Challenges
 
@@ -48,7 +48,7 @@ The first step in understanding Azure AI Foundry is to get familiar with the bas
 
 ## Success Criteria
 
-1. Verify that you deployed a Standard GPT-3.5 model using  Azure AI Foundry.
+1. Verify that you deployed a Standard GPT-4o model using  Azure AI Foundry.
 1. Verify that you can access the Azure AI Foundry Studio and create a new chat.
 1. Verify that you can craft a prompt to return a United States Postal Service formatted address from the provided email
 1. Verify that you can craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]`
@@ -66,4 +66,4 @@ The first step in understanding Azure AI Foundry is to get familiar with the bas
 
 [Chain of Thought Prompting](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#chain-of-thought-prompting)
 
-### [< Previous Challenge](./Challenge-00.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-02.md)
+### **[Home](../../README.md)** - [Next Challenge >](./Semantic-Kernel-Challenge.md)

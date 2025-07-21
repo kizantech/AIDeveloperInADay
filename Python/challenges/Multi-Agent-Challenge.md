@@ -335,4 +335,4 @@ flowchart TD
 - [AutoGen Framework](https://microsoft.github.io/autogen/) - Microsoft's comprehensive multi-agent framework
 - [Multi-Agent System Patterns](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/agent-chat?pivots=programming-language-python) - Advanced collaboration patterns
 
-### [< Previous Challenge](./Challenge-07.md) - **[Home](../README.md)**
+### [< Previous Challenge](./RAG-Challenge.md) - ** [Home](../README.md) **

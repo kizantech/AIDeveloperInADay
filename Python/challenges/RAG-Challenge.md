@@ -1,4 +1,4 @@
-### [< Previous Challenge](./SK-Plugins-Challenge.md) - **[Home](../README.md)** - [Next Challenge >](./Multi-Agent-Challenge.md)
+### [< Previous Challenge](./SK-Plugins-Challenge.md) - **[Home](../../README.md)** - [Next Challenge >](./Multi-Agent-Challenge.md)
 
 # RAG Pattern with Azure AI Search
 
@@ -229,4 +229,4 @@ The RAG pattern ensures responses are factual, up-to-date, and relevant to your 
 * Delete the AI Search Index and re-upload the Employee Handbook PDF changing the **chunk size**. Experiment with different chunk sizes and see how it affects the search results.
 * Update the Semantic Search Plugin to return the top 3 most relevant search results, instead of just the top result.
 
-### [< Previous Challenge](./Challenge-04.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-06.md)
+### [< Previous Challenge](./SK-Plugins-Challenge.md) - **[Home](../../README.md)** - [Next Challenge >](./Multi-Agent-Challenge.md)
