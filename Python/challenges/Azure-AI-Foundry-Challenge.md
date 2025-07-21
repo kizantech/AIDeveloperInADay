@@ -9,7 +9,7 @@ The first step in understanding Azure AI Foundry is to get familiar with the bas
 ## Setup Azure AI Foundry
 
 1. Navigate to  [Azure AI Foundry](https://ai.azure.com) and login with your Azure credentials
-2. Deploy a ***Standard GPT4o*** model in a region that can host GTP-4o, GPT-4.1 and DALL-E models
+2. Deploy a ***Standard GPT4o*** model in a region that can host GPT-4o, GPT-4.1 and DALL-E models
 
 ## Challenges
 
