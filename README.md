@@ -22,3 +22,23 @@ Participants will learn how to:
   - Grounding AI
 - Working with Image generation
 - Multi-Agent workflows
+
+## Challenges
+
+### Required in order
+1. [Local Environment Setup](./Python/challenges/Resources/Supporting%20Challenges/Local-Dev-Environment-Setup.md)
+1. [Semantic Kernel Intro](./Python/challenges/Semantic-Kernel-Challenge.md)
+1. [Semantic Kernel Plugins](./Python/challenges/SK-Plugins-Challenge.md)
+1. [RAG Plugins](./Python/challenges/RAG-Challenge.md)
+1. [Multi-Agent Chat](./Python/challenges/Multi-Agent-Challenge.md)
+
+### Optional
+
+- These challenges are required if you are NOT participating in a hosted workshop.
+  - [Setup Azure AI Search](./Python/challenges/Resources/Supporting%20Challenges/Setup-RAG.md)
+- These challenges are stand alone
+  - [Azure AI Foundry](./Python/challenges/Azure-AI-Foundry-Challenge.md)
+  - [Reference App](./Python/challenges/Resources/Supporting%20Challenges/Reference-App.md)
+  - [OpenAPI Plugins](./Python/challenges/Resources/Supporting%20Challenges/OpenAPI-Plugins.md)
+  - [AI Safety](./Python/challenges/Resources/Supporting%20Challenges/AI-Safety.md)
+  - [Image Generation with Dall-e 3](./Python/challenges/Resources/Supporting%20Challenges/Image-Generation.md)
