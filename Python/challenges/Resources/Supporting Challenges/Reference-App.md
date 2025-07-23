@@ -177,7 +177,7 @@ VS Code provides powerful debugging capabilities that will help you troubleshoot
    - [ ] Successfully start a debug session
    - [ ] Understand how to use debug controls and console
 
-**Ready to Begin!** Now that you understand the application structure and VS Code setup, you're ready for [Challenge 2](../../Semantic-Kernel-Challenge.md).
+**Ready to Begin!** Now that you understand the application structure and VS Code setup, you're ready for [Add Kernel to Chat Application](../../Semantic-Kernel-Challenge.md).
 
 ## Quick Reference
 
