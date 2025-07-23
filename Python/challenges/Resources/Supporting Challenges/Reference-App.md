@@ -8,7 +8,7 @@ The application features a modern chat interface where users can interact with A
 
 Before diving into debugging and running the application, let's understand what you'll be working with:
 
-1. **Key Files for Challenges 2-7:**
+1. **Key Files for Semantic Kernel Challenges:**
    - `src/app.py` - The main Streamlit application (you won't modify this)
    - `src/chat.py` - **This is where you'll make most of your changes**
    - `src/workitems/api.py` - WorkItems API service (used starting in Challenge 4)
@@ -42,7 +42,7 @@ VS Code has been pre-configured with multiple launch profiles to make developmen
 > 5. Proceed with installing your requirements
 > 6. To deactivate your virtual environment: `.\<name of your virtual environment>\Scripts\deactivate`
 
-### For Challenges 2-3: Basic Chat Application
+### For Semantic Kernel and Plugins
 
 **Recommended Launch Profile: "Python: Streamlit App"**
 
@@ -66,7 +66,7 @@ VS Code has been pre-configured with multiple launch profiles to make developmen
    - This does the same thing as "Python: Streamlit App"
    - Use this if you want to focus specifically on debugging the chat functionality
 
-### For Challenge 4+: Full Application with WorkItems API
+### For OpenAPI Plugins
 
 **Recommended Launch Profile: "Challenge 4: Run WorkItems API and App"**
 
@@ -132,21 +132,21 @@ VS Code provides powerful debugging capabilities that will help you troubleshoot
    - The application will open at `http://localhost:8501`
    - You should see a modern chat interface
 
-2. **Initial Test (Challenge 2):**
+2. **Initial Test (Semantic Kernel):**
    ```text
    Why is the sky blue?
    ```
    - **Expected**: The AI should provide a scientific explanation
    - **If Error**: Check your `.env` file configuration and Azure AI Foundry setup
 
-3. **Context Test (Challenge 2):**
+3. **Context Test (Semantic Kernel):**
    ```text
    Why is it red?
    ```
    - **Expected**: The AI understands you're still talking about the sky
    - **If Confused**: Check that chat history is properly maintained
 
-4. **API Test (Challenge 4+):**
+4. **API Test (OpenAPI Plugins):**
    ```text
    What are my work items?
    ```
@@ -155,10 +155,10 @@ VS Code provides powerful debugging capabilities that will help you troubleshoot
 
 ## What to Expect as You Progress
 
-- **Challenge 2**: Simple chat with Azure AI model - use basic launch profile
-- **Challenge 3**: Add time and weather plugins - still basic launch profile  
-- **Challenge 4**: External API integration - switch to compound launch profile
-- **Challenge 5+**: Advanced features like search and image generation - compound launch profile
+- **Semantic Kernel**: Simple chat with Azure AI model - use basic launch profile
+- **SK with Plugins**: Add time and weather plugins - still basic launch profile  
+- **OpenAPI Plugins**: External API integration - switch to compound launch profile
+- **RAG and onward**: Advanced features like search and image generation - compound launch profile
 
 ## Success Criteria
 
@@ -177,7 +177,7 @@ VS Code provides powerful debugging capabilities that will help you troubleshoot
    - [ ] Successfully start a debug session
    - [ ] Understand how to use debug controls and console
 
-**Ready to Begin!** Now that you understand the application structure and VS Code setup, you're ready for [Challenge 2](../../Challenge-02.md#challenges).
+**Ready to Begin!** Now that you understand the application structure and VS Code setup, you're ready for [Challenge 2](../../Semantic-Kernel-Challenge.md).
 
 ## Quick Reference
 
