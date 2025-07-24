@@ -26,7 +26,7 @@ Participants will learn how to:
 ## Challenges
 
 ### Required in order
-1. [Local Enviroment Setup](./Python/challenges/Resources/Supporting%20Challenges/Local-Dev-Enviroment-Setup.md)
+1. [Local Enviroment Setup](./Python/challenges/Resources/Supporting%20Challenges/Local-Dev-Environment-Setup.md)
 1. [Semantic Kernel Intro](./Python/challenges/Semantic-Kernel-Challenge.md)
 1. [Semantic Kernel Plugins](./Python/challenges/SK-Plugins-Challenge.md)
 1. [RAG Plugins](./Python/challenges/RAG-Challenge.md)
