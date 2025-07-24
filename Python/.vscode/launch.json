@@ -101,7 +101,7 @@
         },
         {
             "name": "Challenge 4+: Mac version",
-            "configurations": ["Python: WorkItems API", "Python: Streamlit App"],
+            "configurations": ["Mac: WorkItems API", "Mac: Streamlit App"],
             "stopAll": true,
             "presentation": {
                 "hidden": false,
