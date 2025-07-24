@@ -81,7 +81,7 @@
         },
         {
             "name": "Challenge 2-3: Mac version",
-            "configurations": ["Python: Streamlit App"],
+            "configurations": ["Mac: Streamlit App"],
             "stopAll": true,
             "presentation": {
                 "hidden": false,
