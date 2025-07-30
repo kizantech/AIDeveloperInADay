@@ -3,7 +3,7 @@ import logging
 from dotenv import load_dotenv
 from semantic_kernel import Kernel
 from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion, AzureTextToImage, AzureChatPromptExecutionSettings
-from semantic_kernel.connectors.memory.azure_ai_search import AzureAISearchStore
+from semantic_kernel.connectors.azure_ai_search import AzureAISearchStore
 from semantic_kernel.connectors.ai.function_choice_behavior import FunctionChoiceBehavior
 from semantic_kernel.connectors.openapi_plugin import OpenAPIFunctionExecutionParameters
 from semantic_kernel.connectors.ai.open_ai import AzureTextEmbedding
@@ -14,9 +14,8 @@ from pathlib import Path
 
 from plugins.ai_search_plugin import AiSearchPlugin
 from plugins.geo_coding_plugin import GeoPlugin
-# Uncomment the following after SK-Plugins-Challenge
-# from plugins.time_plugin import TimePlugin
-# from plugins.weather_plugin import WeatherPlugin
+from plugins.datetime_plugin import DateTimePlugin
+from plugins.weather_plugin import WeatherPlugin
 
 # Add Logger
 logger = logging.getLogger(__name__)
