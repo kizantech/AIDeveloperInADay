@@ -51,17 +51,17 @@ This is a **practical, build-first workshop**. Every concept is taught through h
 ## Workshop Structure
 
 ### Required Challenges (Complete in Order)
-1. **[Local Environment Setup](./Python/challenges/Local-Dev-Environment-Setup.md)** - Get your development environment ready
-2. **[Semantic Kernel Fundamentals](./Python/challenges/Semantic-Kernel-Challenge.md)** - Build your first AI chat application  
-3. **[AI Plugins & Function Calling](./Python/challenges/SK-Plugins-Challenge.md)** - Connect AI to real-world data and services
-4. **[RAG Implementation](./Python/challenges/RAG-Challenge.md)** - Build AI that knows about your documents
-5. **[Multi-Agent Systems](./Python/challenges/Multi-Agent-Challenge.md)** - Orchestrate multiple AI agents working together
+1. **[Local Environment Setup](./Python/challenges/Challenge-00-Local-Dev-Env.md)** - Get your development environment ready
+2. **[Azure AI Foundry](./Python/challenges/Challenge-01-Azure-AI-Foundry.md)** - Master the Azure AI platform
+3. **[Semantic Kernel Fundamentals](./Python/challenges/Challenge-02-Semantic-Kernel.md)** - Build your first AI chat application  
+4. **[AI Plugins & Function Calling](./Python/challenges/Challenge-03-SK-Plugins.md)** - Connect AI to real-world data and services
+5. **[RAG Implementation](./Python/challenges/Challenge-04-RAG-Plugin.md)** - Build AI that knows about your documents
+6. **[Multi-Agent Systems](./Python/challenges/Challenge-05-Multi-Agent.md)** - Orchestrate multiple AI agents working together
 
 ### Advanced & Optional Challenges
 Dive deeper into specific areas or explore additional capabilities:
 
 **Platform Deep-Dives:**
-- **[Azure AI Foundry](./Python/challenges/Azure-AI-Foundry-Challenge.md)** - Master the Azure AI platform
 - **[Setup Azure AI Search](./Python/challenges/Resources/Supporting%20Challenges/Setup-RAG.md)** - Configure your own search infrastructure
 
 **Specialized Capabilities:**
@@ -81,7 +81,7 @@ Dive deeper into specific areas or explore additional capabilities:
 
 ## Getting Started
 
-Ready to build your first AI application? Start with the **[Local Environment Setup](./Python/challenges/Local-Dev-Environment-Setup.md)** challenge and begin your journey from zero to AI developer!
+Ready to build your first AI application? Start with the **[Local Environment Setup](./Python/challenges/Challenge-00-Local-Dev-Env.md)** challenge and begin your journey from zero to AI developer!
 
 ---
 
