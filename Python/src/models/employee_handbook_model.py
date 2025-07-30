@@ -7,11 +7,10 @@ from typing import Annotated, Any
 from pydantic import BaseModel
 
 from semantic_kernel.connectors.ai.open_ai import OpenAIEmbeddingPromptExecutionSettings
-from semantic_kernel.data import (
-    VectorStoreRecordDataField,
-    VectorStoreRecordKeyField,
-    VectorStoreRecordVectorField,
+from semantic_kernel.data.vector import (
+    VectorStoreField,
     vectorstoremodel,
+    FieldTypes
 )
 
 ###
@@ -28,18 +27,17 @@ from semantic_kernel.data import (
 @vectorstoremodel
 @dataclass
 class EmployeeHandbookModel(BaseModel):
-    chunk_id: Annotated[str, VectorStoreRecordKeyField]
-    content: Annotated[str, VectorStoreRecordDataField()]
-    title: Annotated[str, VectorStoreRecordDataField()]
-    url: Annotated[str, VectorStoreRecordDataField()]
-    filepath: Annotated[str, VectorStoreRecordDataField()]
-    parent_id: Annotated[str, VectorStoreRecordDataField()]
+    chunk_id: Annotated[str, VectorStoreField(FieldTypes.KEY)]
+    content: Annotated[str, VectorStoreField(FieldTypes.DATA)]
+    title: Annotated[str, VectorStoreField(FieldTypes.DATA)]
+    url: Annotated[str, VectorStoreField(FieldTypes.DATA)]
+    filepath: Annotated[str, VectorStoreField(FieldTypes.DATA)]
+    parent_id: Annotated[str, VectorStoreField(FieldTypes.DATA)]
     contentVector: Annotated[
         list[float] | None,
-        VectorStoreRecordVectorField(
+        VectorStoreField(
             dimensions=1536,
-            local_embedding=True,
-            embedding_settings={"embedding": OpenAIEmbeddingPromptExecutionSettings(dimensions=1536)},
+            field_type=FieldTypes.VECTOR
         ),
     ] = None
 

@@ -2,10 +2,9 @@ import os
 import sys
 from typing import TypedDict, Annotated
 from semantic_kernel.functions import kernel_function
-from semantic_kernel.connectors.memory.azure_ai_search import AzureAISearchCollection, AzureAISearchStore
-from semantic_kernel.connectors.memory.azure_ai_search.azure_ai_search_settings import AzureAISearchSettings
+from semantic_kernel.connectors.azure_ai_search import AzureAISearchCollection, AzureAISearchStore, AzureAISearchSettings
 from semantic_kernel.connectors.ai.open_ai import AzureTextEmbedding
-from semantic_kernel.data.vector_search import VectorSearchOptions
+from semantic_kernel.data.vector import VectorSearchOptions
 from semantic_kernel import Kernel
 
 from models.employee_handbook_model import EmployeeHandbookModel
@@ -75,16 +74,9 @@ class AiSearchPlugin:
                 print(f"Attempting to access collection: {collection_name}")
                 collection = self.store.get_collection(
                     collection_name=collection_name,
-                    data_model_type=EmployeeHandbookModel
+                    record_type=EmployeeHandbookModel
                 )
                 print(f"✅ Successfully accessed collection '{collection_name}'")
-                
-                # Try a simple operation with a small limit to test access
-                search_options = VectorSearchOptions(
-                    vector_field_name="contentVector",  # Specify which vector field to use
-                    top=1,  # Just get one result to verify access
-                    include_vectors=False  # Don't need the vectors
-                )
                 
                 # Generate a simple test embedding
                 print("Generating test embedding...")
@@ -94,9 +86,11 @@ class AiSearchPlugin:
                 
                 # Check for results
                 print("Executing vector search with test query...")
-                search_results = await collection.vectorized_search(
+                search_results = await collection.search(
                     vector=test_vector,
-                    options=search_options
+                    vector_property_name="contentVector",  # Make sure this matches your index field name
+                    top=3,  # Retrieve top 3 results
+                    include_vectors=False
                 )
                 
                 result_count = 0
@@ -150,20 +144,15 @@ class AiSearchPlugin:
         # Get the collection
         collection: AzureAISearchCollection = self.store.get_collection(
             collection_name=collection_name,
-            data_model_type=EmployeeHandbookModel
-        )
-        
-        # Create improved search options
-        search_options = VectorSearchOptions(
-            vector_field_name="contentVector",  # Make sure this matches your index field name
-            top=3,  # Retrieve top 3 results
-            include_vectors=False  # We don't need the vectors in the results
+            record_type=EmployeeHandbookModel
         )
         
         print(f"Executing vector search with query: '{query_str}'")
-        search_results = await collection.vectorized_search(
+        search_results = await collection.search(
             vector=query_vector, 
-            options=search_options
+            vector_property_name="contentVector",  # Make sure this matches your index field name
+            top=3,  # Retrieve top 3 results
+            include_vectors=False
         )
 
         result_list = []
@@ -172,7 +161,7 @@ class AiSearchPlugin:
             count += 1
             result_list.append(result)
             print(
-                f"Result {count}: {result.record.parent_id} (with {result.record.title}, score: {result.score})"
+                f"Result {count}: {result.record.id} (with {result.record.title}, score: {result.score})"
             )
             
         if count == 0:
@@ -184,4 +173,3 @@ class AiSearchPlugin:
             print("4. You have proper permissions to access the index")
             
         return result_list
-
