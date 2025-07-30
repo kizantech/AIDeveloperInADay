@@ -1,10 +1,10 @@
-### [< Previous Challenge](./Semantic-Kernel-Challenge.md) - **[Home](../../README.md)** - [Next Challenge >](./RAG-Challenge.md)
+### [< Previous Challenge](./Challenge-02-Semantic-Kernel.md) - **[Home](../../README.md)** - [Next Challenge >](./Challenge-04-RAG-Plugin.md)
 
 # Semantic Kernel Plugins
 
-## Pre-requisites
+## Prerequisites
 
-Completed [Challenge 02](./Challenge-02.md) and have a functional version of the solution running in Visual Studio Code.
+Completed [Challenge 02](./Challenge-02-Semantic-Kernel.md) and have a functional version of the solution running in Visual Studio Code.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ This challenge will introduce you to building Semantic Kernel Plugins in python,
 
   * Enable Automatic Function Calling
 
-      In ```chat.py``` below the comment ```// Challenge 03 - Create Prompt Execution Settings``` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-python#using-automatic-function-calling).
+      In `chat.py` below the comment `# Challenge 03 - Create Prompt Execution Settings` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-python#using-automatic-function-calling).
 
   * Test the AI by launching the application and asking the bot
   
@@ -58,7 +58,7 @@ This challenge will introduce you to building Semantic Kernel Plugins in python,
 
     See the [Success Criteria](#success-criteria) section for additional questions to test your Time Plugin.
 
-* **Review the ```geo_coding_plugin.py``` file located in the ***plugins*** directory**
+* **Review the `geo_coding_plugin.py` file located in the ***plugins*** directory**
   * Register for a free API key from [Geocoding API](https://geocode.maps.co/) to use in the plugin
 
   ### Environment Setup
@@ -93,13 +93,13 @@ This challenge will introduce you to building Semantic Kernel Plugins in python,
     1. Get the forecast weather at lat/long location for up to 16 days in the future
 
       ```python
-        $"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,rain,showers,snowfall,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m&hourly=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation_probability,precipitation,rain,showers,snowfall,weather_code,cloud_cover,wind_speed_10m,uv_index&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&forecast_days={days}");
+        f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,rain,showers,snowfall,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m&hourly=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation_probability,precipitation,rain,showers,snowfall,weather_code,cloud_cover,wind_speed_10m,uv_index&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&forecast_days={days}"
        ```
 
     1. Get the current weather at lat/long location for a number of days in the past
 
        ```python
-        $"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&daily=weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,sunrise,sunset,daylight_duration,uv_index_max,precipitation_sum,rain_sum,showers_sum,snowfall_sum,precipitation_hours,wind_speed_10m_max,wind_gusts_10m_max&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&past_days={daysInPast}");
+        f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&daily=weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,sunrise,sunset,daylight_duration,uv_index_max,precipitation_sum,rain_sum,showers_sum,snowfall_sum,precipitation_hours,wind_speed_10m_max,wind_gusts_10m_max&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&past_days={daysInPast}"
        ```
 
   * Test your Plugins by asking the following question:
@@ -110,11 +110,11 @@ This challenge will introduce you to building Semantic Kernel Plugins in python,
 
     :exclamation: The AI should perform the following plan to answer the question but may do so in a different order or different set of functions:
 
-    :one: The AI should ask Semantic Kernel to call the ```GetDate``` function on the Time Plugin to get **today's** date in order to calculate the number of days until **next Thursday**
+    :one: The AI should ask Semantic Kernel to call the `GetDate` function on the Time Plugin to get **today's** date in order to calculate the number of days until **next Thursday**
 
-    :two: Because the Weather Forecast requires a Latitude and Longitude, the AI should instruct Semantic Kernel to call the ```GetLocation``` function on the Geocoding Plugin to get the coordinates for **San Francisco**
+    :two: Because the Weather Forecast requires a Latitude and Longitude, the AI should instruct Semantic Kernel to call the `GetLocation` function on the Geocoding Plugin to get the coordinates for **San Francisco**
 
-    :three: Finally, the AI should ask Semantic Kernel to call the ```GetWeatherForecast``` function on the Weather Plugin passing in the current date/time and Lat/Long to get the weather forecast for **Next Thursday** (expressed as the number of days in the future) at the coordinates for **San Francisco**
+    :three: Finally, the AI should ask Semantic Kernel to call the `GetWeatherForecast` function on the Weather Plugin passing in the current date/time and Lat/Long to get the weather forecast for **Next Thursday** (expressed as the number of days in the future) at the coordinates for **San Francisco**
 
     A simplified sequence diagram between Semantic Kernel and AI is shown below:
 
@@ -256,11 +256,11 @@ The plugin architecture allows the AI model to access real-time, specialized inf
 
 ## Tips
 
-* Use a API test client such as Bruno or Postman to test the APIs  first, before writing code to connect it to your plugin.
+* Use a API test client such as Bruno or Postman to test the APIs first, before writing code to connect it to your plugin.
 
 ## Advanced Challenges (Optional)
 
-Too comfortable?  Eager to do more?  Try these additional challenges!
+Too comfortable? Eager to do more? Try these additional challenges!
 
 * Add debug logging messages to your Time plugin.
 
@@ -271,6 +271,6 @@ Too comfortable?  Eager to do more?  Try these additional challenges!
   * [Public API List on GitHub](https://github.com/public-api-lists/public-api-lists)
   * [Open API List](https://apilist.fun/)
 
-* Look for APIs that are either current event related - such as  events and calendars - or something with esoteric knowledge that the AI does poorly with, such as the UPC database, or something like the [PokeAPI - Pokemon Pokedex API](https://pokeapi.co/docs/v2).
+* Look for APIs that are either current event related - such as events and calendars - or something with esoteric knowledge that the AI does poorly with, such as the UPC database, or something like the [PokeAPI - Pokemon Pokedex API](https://pokeapi.co/docs/v2).
 
-### [< Previous Challenge](./Azure-AI-Foundry-Challenge.md) - **[Home](../../README.md)** - [Next Challenge >](./RAG-Challenge.md)
+### [< Previous Challenge](./Challenge-02-Semantic-Kernel.md) - **[Home](../../README.md)** - [Next Challenge >](./Challenge-04-RAG-Plugin.md)

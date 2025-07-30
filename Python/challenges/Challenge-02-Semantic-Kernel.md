@@ -1,4 +1,4 @@
-### [< Previous Challenge](./Azure-AI-Foundry-Challenge.md) - [**Home**](../README.md) - [Next Challenge >](./SK-Plugins-Challenge.md)
+### [< Previous Challenge](./Challenge-01-Azure-AI-Foundry.md) - **[Home](../../README.md)** - [Next Challenge >](./Challenge-03-SK-Plugins.md)
 
 # Semantic Kernel Fundamentals
 
@@ -10,44 +10,9 @@ The first step in understanding Semantic Kernel is to become familiar with the b
 
 In this challenge, you will be working with a starter application that requires you to complete the implementation of the chat feature using Semantic Kernel and the Azure AI Foundry GPT-4o model. The application has the basic structure set up, and you'll need to implement key parts of the chat functionality to allow users to interact with the AI model.
 
-## Prerequisites
-
-1. Complete the [Getting Familiar With the Reference Application](../challenges/Resources/Supporting%20Challenges/Challenge-02-Reference-App.md) beginner guide.
-
 ## Challenges
 
-### Implementation Steps
-
-> [!IMPORTANT]
-> **Install Python Dependencies First!**
-> 
-> Before you can run the application, you **must** install the required Python packages. The application will not work without these dependencies.
->
-> It is **highly recommended** that you create a Python virtual environment for your packages. If you do not do this you will need to update the launch.json file in the .vscode folder to point to your python installation.
->
-> **Creating your Python virtual environment**
-> 1. Open your terminal or command prompt
-> 2. Navigate to the `Python` directory in your terminal/command prompt
-> 3. Run the following command to create the virtual environment: `python -m venv <virtual environment name>`
-> 4. Then activate the virtual environment: `.\<name of your virtual environment>\Scripts\activate`
-> 5. Proceed with installing your requirements
-> 6. To deactivate your virtual environment: `.\<name of your virtual environment>\Scripts\deactivate`
->
-> **Using VS Code (Recommended):**
-> 1. Open the integrated terminal in VS Code (`Terminal` → `New Terminal` or `` Ctrl+` ``)
-> 2. Make sure you're in the `src` directory: `cd src`
-> 3. Install the requirements: `pip install -r requirements.txt`
->
-> **Using Command Line:**
-> 1. Navigate to the `src` directory in your terminal/command prompt
-> 2. Run: `pip install -r requirements.txt`
->
-> **Troubleshooting:**
-> - If you see permission errors, you may need to activate your virtual environment first
-> - On Windows, you might need to use `python -m pip install -r requirements.txt`
-> - The installation may take a few minutes as it downloads Semantic Kernel and other dependencies
-
-1. Deploy a GTP-4o model using [Azure AI Foundry](https://ai.azure.com) `https://ai.azure.com`. The **Deployment name** should be something similar to ``` gpt-4o ```. This name will be needed next when configuring Semantic Kernel. :exclamation: Deployment type should be **Standard**. :exclamation:
+1. Deploy a GPT-4o model using [Azure AI Foundry](https://ai.azure.com). The **Deployment name** should be something similar to `gpt-4o`. This name will be needed next when configuring Semantic Kernel. :exclamation: Deployment type should be **Standard**. :exclamation:
 
 2. Create a new `.env` file in the `src` directory with the Azure AI Foundry configuration values:
 
@@ -88,7 +53,7 @@ In this challenge, you will be working with a starter application that requires 
 
 ### Testing
 
-1. **Start the application** using the recommended VS Code launch profile "Python: Streamlit App" (as covered in the [reference application guide](../challenges/Resources/Supporting%20Challenges/Challenge-02-Reference-App.md#getting-started-with-vs-code-launch-profiles)), then test the chat completion by submitting the prompt:
+1. **Start the application** using the recommended VS Code launch profile "Python: Streamlit App" (as covered in the [reference application guide](./Resources/Supporting%20Challenges/Reference-App.md#getting-started-with-vs-code-launch-profiles)), then test the chat completion by submitting the prompt:
 
     ```text
     Why is the sky blue?
@@ -163,18 +128,17 @@ This diagram shows how a user's message travels through your application, gets p
 ## Success Criteria
 
 - **Setup & Configuration**
-  - [ ] **Installed Python dependencies** using `pip install -r requirements.txt`
   - [ ] Deployed GPT model in Azure AI Foundry
   - [ ] Created a new `.env` file with deployment name, endpoint URL, and API key
-- Kernel Setup
+- **Kernel Setup**
   - [ ] Implemented the chat completion service in `initialize_kernel()`
   - [ ] Added the service to the kernel instance
-- Message Handling
+- **Message Handling**
   - [ ] Used the global chat history variable correctly
   - [ ] Implemented adding user messages to chat history
   - [ ] Successfully calling chat completion service
   - [ ] Added AI responses to chat history
-- Testing
+- **Testing**
   - [ ] "Why is the sky blue?" returns a coherent response
   - [ ] "Why is it red?" demonstrates chat history is working
   - [ ] AI responds appropriately to various prompts
@@ -191,4 +155,4 @@ This diagram shows how a user's message travels through your application, gets p
 
 [Semantic Kernel Environment Variables Reference](https://github.com/microsoft/semantic-kernel/blob/main/python/samples/concepts/setup/ALL_SETTINGS.md)
 
-### [< Previous Challenge](./Challenge-01.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-03.md)
+### [< Previous Challenge](./Challenge-01-Azure-AI-Foundry.md) - **[Home](../../README.md)** - [Next Challenge >](./Challenge-03-SK-Plugins.md)

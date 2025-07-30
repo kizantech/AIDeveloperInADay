@@ -1,4 +1,4 @@
-### [< Previous Challenge](./SK-Plugins-Challenge.md) - **[Home](../../README.md)** - [Next Challenge >](./Multi-Agent-Challenge.md)
+### [< Previous Challenge](./Challenge-03-SK-Plugins.md) - **[Home](../../README.md)** - [Next Challenge >](./Challenge-05-Multi-Agent.md)
 
 # RAG Pattern with Azure AI Search
 
@@ -53,11 +53,9 @@ Document chunking is a technique used in AI, especially in Retrieval-Augmented G
 
 In the context of RAG, these chunks are used to enhance the AI's ability to generate accurate and contextually relevant responses. When a query is made, the retrieval mechanism searches through these smaller chunks to find the most relevant information, which the model then uses to generate a coherent and informative answer. This method improves the performance and accuracy of AI models by ensuring they have access to the most pertinent data without being overwhelmed by the volume of information.
 
-## Pre-requisites
+## Prerequisites
 
-Completed at least [Challenge 03](./Challenge-03.md) and have a functional version of the solution running and a good understanding of plugins.
-
-## Introduction
+Completed at least [Challenge 03](./Challenge-03-SK-Plugins.md) and have a functional version of the solution running and a good understanding of plugins.
 
 In this challenge, you will create a Semantic Search Plugin that utilizes an Azure AI Search Index to retrieve information from the Contoso Handbook PDF. The purpose of the plugin is to enable the AI Model to answer questions about your own documents. We achieve this by converting the user's query into an embedding using a Text Embedding model. The embedding is then used to search the AI Search Index for the most relevant information.
 
@@ -71,9 +69,9 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 
 ## Getting your URL, Key and Index Name
 
-1. Your search index name will be ```employeehandbook```, put that in your .env file
+1. Your search index name will be `employeehandbook`, put that in your .env file
 
-1. To get your AI Search URL and Key navigate to [the azure portal](portal.azure.com)
+1. To get your AI Search URL and Key navigate to [the azure portal](https://portal.azure.com)
 
 1. Then in the search bar, search for "AI Search" and click on the first result
 
@@ -83,7 +81,7 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 
     ![AI Search URL](./Resources/image/ai-search-url.png)
 
-1. Copy that URl into your .env file
+1. Copy that URL into your .env file
 
 1. Then expand the "Settings" section and click on "Keys"
 
@@ -103,7 +101,7 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 
     :bulb: Note the 2 environment variables you added to the .env file: AZURE_AI_SEARCH_ENDPOINT, AZURE_AI_SEARCH_KEY.
 
-1. The Sample RAG Plugin in the documentation maps the incoming data from AI Search to a class named ```EmployeeHandbookModel```.
+1. The Sample RAG Plugin in the documentation maps the incoming data from AI Search to a class named `EmployeeHandbookModel`.
 
     The properties on this class map to fields in the AI Search Index we created earlier. In the portal, you can navigate to the AI Search Index and see the fields that are available.
 
@@ -229,4 +227,4 @@ The RAG pattern ensures responses are factual, up-to-date, and relevant to your 
 * Delete the AI Search Index and re-upload the Employee Handbook PDF changing the **chunk size**. Experiment with different chunk sizes and see how it affects the search results.
 * Update the Semantic Search Plugin to return the top 3 most relevant search results, instead of just the top result.
 
-### [< Previous Challenge](./SK-Plugins-Challenge.md) - **[Home](../../README.md)** - [Next Challenge >](./Multi-Agent-Challenge.md)
+### [< Previous Challenge](./Challenge-03-SK-Plugins.md) - **[Home](../../README.md)** - [Next Challenge >](./Challenge-05-Multi-Agent.md)
