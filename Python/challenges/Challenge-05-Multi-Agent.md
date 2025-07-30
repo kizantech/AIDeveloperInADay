@@ -1,4 +1,4 @@
-### [< Previous Challenge](./RAG-Challenge.md) - **[Home](../README.md)**
+### [< Previous Challenge](./Challenge-04-RAG-Plugin.md) - **[Home](../../README.md)**
 
 # Multi-Agent Systems
 
@@ -335,4 +335,4 @@ flowchart TD
 - [AutoGen Framework](https://microsoft.github.io/autogen/) - Microsoft's comprehensive multi-agent framework
 - [Multi-Agent System Patterns](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/agent-chat?pivots=programming-language-python) - Advanced collaboration patterns
 
-### [< Previous Challenge](./RAG-Challenge.md) - ** [Home](../../README.md) **
+### [< Previous Challenge](./Challenge-04-RAG-Plugin.md) - **[Home](../../README.md)**

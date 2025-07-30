@@ -1,15 +1,15 @@
-### **[Home](../../README.md)** - [Next Challenge >](./Semantic-Kernel-Challenge.md)
+### [< Previous Challenge](./Challenge-00-Local-Dev-Env.md) - **[Home](../../README.md)** - [Next Challenge >](./Challenge-02-Semantic-Kernel.md)
 
 # Azure AI Foundry Fundamentals
 
 ## Introduction
 
-The first step in understanding Azure AI Foundry is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure AI Foundry and how it can be used to build powerful AI infused applications. You will deploy a GPT-4o model and use the Azure AI Foundry Studio to interact with the model.
+The first step in understanding Azure AI Foundry is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure AI Foundry and how it can be used to build powerful AI-infused applications. You will deploy a GPT-4o model and use the Azure AI Foundry Studio to interact with the model.
 
 ## Setup Azure AI Foundry
 
-1. Navigate to  [Azure AI Foundry](https://ai.azure.com) and login with your Azure credentials
-2. Deploy a ***Standard GPT4o*** model in a region that can host GPT-4o, GPT-4.1 and DALL-E models
+1. Navigate to [Azure AI Foundry](https://ai.azure.com) and log in with your Azure credentials
+2. Deploy a ***Standard GPT-4o*** model in a region that can host GPT-4o, GPT-4.1 and DALL-E models
 
 ## Challenges
 
@@ -36,19 +36,19 @@ The first step in understanding Azure AI Foundry is to get familiar with the bas
 
 * Click `Clear Chat` and using the same email from the previous challenge, craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]` where category is the PII category found in the email.
 
-* Click `Clear Chat`and enter the following prompt into the Azure AI Foundry and observe the results
+* Click `Clear Chat` and enter the following prompt into the Azure AI Foundry and observe the results
 
-    :exclamation:Before updating the prompt, clear the current chat history so the AI doesn't consider it's previous answers when responding to the new prompt.
+    :exclamation:Before updating the prompt, clear the current chat history so the AI doesn't consider its previous answers when responding to the new prompt.
 
     ```text
     A coin is heads up. Maybelle flips the coin over. Shalonda flips the coin over. Is the coin still heads up? 
     ```
 
-    The answer, of course, should be ```Yes, the coin is heads up``` but the AI is likely to answer ```No``` because it does not always follow state changes correctly.  Rewrite the prompt convincing the AI to keep track of state changes to successfully answer the question with a ```Yes```.
+    The answer, of course, should be `Yes, the coin is heads up` but the AI is likely to answer `No` because it does not always follow state changes correctly. Rewrite the prompt convincing the AI to keep track of state changes to successfully answer the question with a `Yes`.
 
 ## Success Criteria
 
-1. Verify that you deployed a Standard GPT-4o model using  Azure AI Foundry.
+1. Verify that you deployed a Standard GPT-4o model using Azure AI Foundry.
 1. Verify that you can access the Azure AI Foundry Studio and create a new chat.
 1. Verify that you can craft a prompt to return a United States Postal Service formatted address from the provided email
 1. Verify that you can craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]`
@@ -66,4 +66,4 @@ The first step in understanding Azure AI Foundry is to get familiar with the bas
 
 [Chain of Thought Prompting](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#chain-of-thought-prompting)
 
-### **[Home](../../README.md)** - [Next Challenge >](./Semantic-Kernel-Challenge.md)
+### [< Previous Challenge](./Challenge-00-Local-Dev-Env.md) - **[Home](../../README.md)** - [Next Challenge >](./Challenge-02-Semantic-Kernel.md)

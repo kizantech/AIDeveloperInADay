@@ -1,44 +1,88 @@
 # AI Developer In A Day
 
-## Introduction
+## 🚀 Build Production-Ready AI Applications in One Day
 
-The Azure AI Foundry and Semantic Kernel Fundamentals is an introduction to understanding the conceptual foundations of infusing your application with AI using the Semantic Kernel development kit. Materials from this workshop can serve as a foundation for building your own AI infused solutions with Semantic Kernel.
+Welcome to **AI Developer in a Day** – an intensive, hands-on workshop that transforms developers from AI beginners to confident AI application builders. In just one day, you'll build real, working AI applications using cutting-edge technology including **Azure AI Foundry** and **Semantic Kernel**.
 
-This workshop consists of eight challenges and is designed to encourage learning and research. If you want a deeper understanding of how to implement an AI solution but have little or no experience with OpenAI or Semantic Kernel then this workshop is for you.
+## What You'll Build
 
-We recommend to host this as a team based activity where students work in groups of 3-5 people to solve the challenges. Each challenge is designed to be completed in 30-90 minutes.
+By the end of this workshop, you'll have created:
 
-## Learning Objectives
+**An Intelligent Chat Application** - A fully functional AI assistant that can hold natural conversations
 
-This workshop is designed for individuals who want to gain practical experience in working with Azure AI Foundry and Semantic Kernel. By applying this knowledge, you will be able to integrate AI into your own applications.
+**Smart Plugin System** - AI that can call real APIs, check weather, and integrate with external tools!
 
-Participants will learn how to:
+**RAG-Powered Knowledge Assistant** - An AI that can answer questions about your documents and company data
 
-- Build a simple chat using Semantic Kernel and C#
-- Add plugins and enable auto calling to create Planners
-- Import existing APIs using OpenAPI
-- Implement Retrieval Augmented Generation (RAG)
-  - Document Chunking
-  - Grounding AI
-- Working with Image generation
-- Multi-Agent workflows
+**Multi-Agent Collaboration System** - Multiple AI agents working together to solve complex problems
 
-## Challenges
+## Who This Workshop Is For
 
-### Required in order
-1. [Local Environment Setup](./Python/challenges/Resources/Supporting%20Challenges/Local-Dev-Environment-Setup.md)
-1. [Semantic Kernel Intro](./Python/challenges/Semantic-Kernel-Challenge.md)
-1. [Semantic Kernel Plugins](./Python/challenges/SK-Plugins-Challenge.md)
-1. [RAG Plugins](./Python/challenges/RAG-Challenge.md)
-1. [Multi-Agent Chat](./Python/challenges/Multi-Agent-Challenge.md)
+- **Developers** with little to no AI experience who want to build real applications
+- **Technical professionals** ready to integrate AI into their existing projects  
+- **Teams** looking to quickly upskill on modern AI development practices
 
-### Optional
+## Learning Approach
 
-- These challenges are required if you are NOT participating in a hosted workshop.
-  - [Setup Azure AI Search](./Python/challenges/Resources/Supporting%20Challenges/Setup-RAG.md)
-- These challenges are stand alone
-  - [Azure AI Foundry](./Python/challenges/Azure-AI-Foundry-Challenge.md)
-  - [Reference App](./Python/challenges/Resources/Supporting%20Challenges/Reference-App.md)
-  - [OpenAPI Plugins](./Python/challenges/Resources/Supporting%20Challenges/OpenAPI-Plugins.md)
-  - [AI Safety](./Python/challenges/Resources/Supporting%20Challenges/AI-Safety.md)
-  - [Image Generation with Dall-e 3](./Python/challenges/Resources/Supporting%20Challenges/Image-Generation.md)
+This is a **practical, build-first workshop**. Every concept is taught through hands-on coding challenges where you'll immediately apply what you learn. We recommend working in **teams of 3-5 people** to encourage collaboration and peer learning.
+
+**Time Investment**: Each core challenge takes 30-60 minutes  
+**Technology Stack**: Python, Azure AI Foundry, Semantic Kernel 
+
+## What You'll Master
+
+### Core AI Development Skills
+- **Semantic Kernel Fundamentals** - Build AI applications with enterprise-grade frameworks
+- **Plugin Architecture** - Create modular, reusable AI capabilities
+- **Function Calling** - Enable AI to interact with external systems and APIs
+- **Retrieval Augmented Generation (RAG)** - Ground AI responses in your own data
+- **Multi-Agent Orchestration** - Coordinate multiple AI agents for complex workflows
+
+### Azure AI Platform
+- **Azure AI Foundry** - Deploy and manage AI models at scale
+- **AI Search Integration** - Build intelligent search and knowledge retrieval
+- **Model Deployment** - Host and serve AI models in production
+
+### Production Considerations
+- **AI Safety & Responsible AI** - Build ethical and reliable AI systems
+- **Error Handling** - Create robust AI applications that gracefully handle edge cases
+- **Performance Optimization** - Efficiently use AI resources and manage costs
+
+## Workshop Structure
+
+### Required Challenges (Complete in Order)
+1. **[Local Environment Setup](./Python/challenges/Local-Dev-Environment-Setup.md)** - Get your development environment ready
+2. **[Semantic Kernel Fundamentals](./Python/challenges/Semantic-Kernel-Challenge.md)** - Build your first AI chat application  
+3. **[AI Plugins & Function Calling](./Python/challenges/SK-Plugins-Challenge.md)** - Connect AI to real-world data and services
+4. **[RAG Implementation](./Python/challenges/RAG-Challenge.md)** - Build AI that knows about your documents
+5. **[Multi-Agent Systems](./Python/challenges/Multi-Agent-Challenge.md)** - Orchestrate multiple AI agents working together
+
+### Advanced & Optional Challenges
+Dive deeper into specific areas or explore additional capabilities:
+
+**Platform Deep-Dives:**
+- **[Azure AI Foundry](./Python/challenges/Azure-AI-Foundry-Challenge.md)** - Master the Azure AI platform
+- **[Setup Azure AI Search](./Python/challenges/Resources/Supporting%20Challenges/Setup-RAG.md)** - Configure your own search infrastructure
+
+**Specialized Capabilities:**
+- **[Image Generation with DALL-E 3](./Python/challenges/Resources/Supporting%20Challenges/Image-Generation.md)** - Add visual AI to your applications
+- **[OpenAPI Plugin Integration](./Python/challenges/Resources/Supporting%20Challenges/OpenAPI-Plugins.md)** - Connect to any REST API automatically
+- **[AI Safety & Ethics](./Python/challenges/Resources/Supporting%20Challenges/AI-Safety.md)** - Build responsible AI systems
+
+**Reference Materials:**
+- **[Complete Reference Application](./Python/challenges/Resources/Supporting%20Challenges/Reference-App.md)** - See all concepts working together
+
+## Prerequisites
+
+- **Basic Python knowledge** (variables, functions, basic syntax)
+- **Development environment** with Python 3.10+ and Git
+- **Azure subscription** (free tier works fine)
+- **Curiosity and enthusiasm** for building AI applications!
+
+## Getting Started
+
+Ready to build your first AI application? Start with the **[Local Environment Setup](./Python/challenges/Local-Dev-Environment-Setup.md)** challenge and begin your journey from zero to AI developer!
+
+---
+
+*This workshop provides the foundation for building your own AI-infused solutions. By the end, you'll have the knowledge, tools, and confidence to integrate AI into your own projects and continue your AI development journey.*
