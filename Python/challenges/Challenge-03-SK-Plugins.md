@@ -110,11 +110,11 @@ This challenge will introduce you to building Semantic Kernel Plugins in python,
 
     :exclamation: The AI should perform the following plan to answer the question but may do so in a different order or different set of functions:
 
-    :one: The AI should ask Semantic Kernel to call the `GetDate` function on the Time Plugin to get **today's** date in order to calculate the number of days until **next Tuesday**
+    :one: The AI should ask Semantic Kernel to call the `GetDate` function on the Time Plugin to get **today's** date in order to calculate the number of days until **next Thursday**
 
     :two: Because the Weather Forecast requires a Latitude and Longitude, the AI should instruct Semantic Kernel to call the `GetLocation` function on the Geocoding Plugin to get the coordinates for **San Francisco**
 
-    :three: Finally, the AI should ask Semantic Kernel to call the `GetWeatherForecast` function on the Weather Plugin passing in the current date/time and Lat/Long to get the weather forecast for **Next Tuesday** (expressed as the number of days in the future) at the coordinates for **San Francisco**
+    :three: Finally, the AI should ask Semantic Kernel to call the `GetWeatherForecast` function on the Weather Plugin passing in the current date/time and Lat/Long to get the weather forecast for **Next Thursday** (expressed as the number of days in the future) at the coordinates for **San Francisco**
 
     A simplified sequence diagram between Semantic Kernel and AI is shown below:
 
