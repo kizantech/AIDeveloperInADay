@@ -10,28 +10,24 @@ Agent Tracing in the Azure AI Foundry Agents Playground remedies this by allowin
 
 ## Create an Agent in the Azure AI Foundry Portal
 
-![agent creation](../image/agentsplay03.png)
-
 1. Navigate to  [Azure AI Foundry](https://ai.azure.com) and login with your Azure credentials.
 2. Within your AI Foundry project, select ***Agents*** from the left-hand menu.  If you do not see ***Agents*** as an available selection, scroll the left-hand toolbar to the bottom and select ***More*** and make sure Agents is pinned.
-3. Click the ***New agent*** button, which will open the Agent Setup interface on the right-hand side.  
-
-* Select your model deployment from the drag down box labeled ***Deployment*** 
-* After selecting your model deployment, enter a unique name that you can recognize in the ***Agent name*** text box.
-* In the ***Instructions*** text box, enter the following prompt:
-
-
+3. Click the ***New agent*** button, which will open the Agent Setup interface on the right-hand side.      
+    ![agent creation](../image/agentsplay03.png)
+    * Select your model deployment from the drag down box labeled ***Deployment*** 
+    * After selecting your model deployment, enter a unique name that you can recognize in the ***Agent name*** text box.
+    * In the ***Instructions*** text box, enter the following prompt:
     ```text
     You are a helpful AI agent that assists with answering questions about the Contoso handbook.
     ```
+    * After you have entered the prompt, navigate to the ***Knowledge*** section of the interface and click the ***+ Add*** button.  Then select ***Files*** and upload the file ***employee_handbook.pdf***, which can be found in the ***Python/src/data*** folder.  If the file has already been uploaded, you can use ***Select an existing vector store*** from the drag down menu and select the vector store for the file.  
+    * After you have added the ***employee_handbook.pdf*** (or selected the existing vector if the file had previously been uploaded), click the ***Try in playground*** button at the top of the Agent Setup interface.
 
-* After you have entered the prompt, navigate to the ***Knowledge*** section of the interface and click the ***+ Add*** button.  Then select ***Files*** and upload the file ***employee_handbook.pdf***, which can be found in the ***Python/src/data*** folder.  If the file has already been uploaded, you can use ***Select an existing vector store*** from the drag down menu and select the vector store for the file.  
-* After you have added the ***employee_handbook.pdf*** (or selected the existing vector if the file had previously been uploaded), click the ***Try in playground*** button at the top of the Agent Setup interface.
+
 
 ## Challenges 
 
 ![agent playground](../image/agentsplay01.png)
-
 1. In the Agent playground, take a few moments to familiarize yourself with the interface and ask the agent some questions.
 
     * Towards the top of the interface, you'll see the ***</>View code*** button.  This shows the code that can be used with the Foundry SDK to use agents created in the AI Foundry portal in your code.
@@ -48,9 +44,7 @@ Agent Tracing in the Azure AI Foundry Agents Playground remedies this by allowin
     ```
 
 3. After you have finished asking the agent questions about the Contoso handbook, click the ***Thread logs*** button at the top of Agents playground interface.
-
 ![agent playground thread logs](../image/agentsplay02.png)
-
 * Notice that each individual section will denote the amount of time the agent took to complete the action/step, and the number of tokens used.
 * The ***Thread*** section designates which thread context the trace is evaluating.
     * Each ***Run*** section shows us data for inputs and outputs, metadata for the run itself, and results for the automated evaluations that occur with each run.  In the context of this challenge, each ***run*** will reference the question it asks, as well as the previous questions asked within the same thread.
@@ -58,11 +52,15 @@ Agent Tracing in the Azure AI Foundry Agents Playground remedies this by allowin
             * Within a tool call, the ***Tool*** section will show information on inputs and outputs and metadata for the tool calls used, their types and kinds, and different attributes.  In the context of this challenge, each ***Tool*** section refers to the agent using a tool call to perform the ***"file_search"*** action, where it searches through the contents of the vector store of the ***employee_handbook.pdf*** file.
             * For ***message_creation*** run steps, the agent role and its outputs are displayed in the ***Input & output*** section.  More information on the message creation can be found in the ***Metadata*** section.
 
+
+
 ## Success Criteria
 1. Verify that you have successfully created an agent, and are able to use the Agents Playground to test its functionality.
 2. Verify that you are able to view each of the different sections and information provided in the Thread Logs.
 3. Verify that you are able to view how long each action/step took your agent to perform.
 4. Verify that you are able to view the number of tokens used during each action/step.
+
+
 
 ## Learning Resources
 
