@@ -29,7 +29,7 @@ This is a **practical, build-first workshop**. Every concept is taught through h
 **Time Investment**: Each core challenge takes 30-60 minutes  
 **Technology Stack**: Python, Azure AI Foundry, Semantic Kernel 
 
-## What You'll Master
+## Learning Objectives
 
 ### Core AI Development Skills
 - **Semantic Kernel Fundamentals** - Build AI applications with enterprise-grade frameworks
