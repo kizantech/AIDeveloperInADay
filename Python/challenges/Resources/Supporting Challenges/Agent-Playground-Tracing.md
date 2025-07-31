@@ -10,7 +10,7 @@ Agent Tracing in the Azure AI Foundry Agents Playground remedies this by allowin
 
 ## Create an Agent in the Azure AI Foundry Portal
 
-![agent creation](./Resources/image/agentsplay03.png)
+![agent creation](../image/agentsplay03.png)
 
 1. Navigate to  [Azure AI Foundry](https://ai.azure.com) and login with your Azure credentials.
 2. Within your AI Foundry project, select ***Agents*** from the left-hand menu.  If you do not see ***Agents*** as an available selection, scroll the left-hand toolbar to the bottom and select ***More*** and make sure Agents is pinned.
@@ -30,7 +30,7 @@ Agent Tracing in the Azure AI Foundry Agents Playground remedies this by allowin
 
 ## Challenges 
 
-![agent playground](./Resources/image/agentsplay01.png)
+![agent playground](../image/agentsplay01.png)
 
 1. In the Agent playground, take a few moments to familiarize yourself with the interface and ask the agent some questions.
 
@@ -49,7 +49,7 @@ Agent Tracing in the Azure AI Foundry Agents Playground remedies this by allowin
 
 3. After you have finished asking the agent questions about the Contoso handbook, click the ***Thread logs*** button at the top of Agents playground interface.
 
-![agent playground thread logs](./Resources/image/agentsplay02.png)
+![agent playground thread logs](../image/agentsplay02.png)
 
 * Notice that each individual section will denote the amount of time the agent took to complete the action/step, and the number of tokens used.
 * The ***Thread*** section designates which thread context the trace is evaluating.
