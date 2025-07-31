@@ -27,7 +27,6 @@ Agent Tracing in the Azure AI Foundry Agents Playground remedies this by allowin
 
 ## Challenges 
 
-![agent playground](../image/agentsplay01.png)
 1. In the Agent playground, take a few moments to familiarize yourself with the interface and ask the agent some questions.
 
     * Towards the top of the interface, you'll see the ***</>View code*** button.  This shows the code that can be used with the Foundry SDK to use agents created in the AI Foundry portal in your code.
@@ -42,16 +41,17 @@ Agent Tracing in the Azure AI Foundry Agents Playground remedies this by allowin
     ```text
     Can you explain the Contoso Privacy policy?
     ```
-
+![agent playground](../image/agentsplay01.png)
 3. After you have finished asking the agent questions about the Contoso handbook, click the ***Thread logs*** button at the top of Agents playground interface.
-![agent playground thread logs](../image/agentsplay02.png)
+
 * Notice that each individual section will denote the amount of time the agent took to complete the action/step, and the number of tokens used.
 * The ***Thread*** section designates which thread context the trace is evaluating.
     * Each ***Run*** section shows us data for inputs and outputs, metadata for the run itself, and results for the automated evaluations that occur with each run.  In the context of this challenge, each ***run*** will reference the question it asks, as well as the previous questions asked within the same thread.
         * Within the run, the ***Run step*** will contain information about actions the agent took within the run, such as tool calls or submitting outputs.
             * Within a tool call, the ***Tool*** section will show information on inputs and outputs and metadata for the tool calls used, their types and kinds, and different attributes.  In the context of this challenge, each ***Tool*** section refers to the agent using a tool call to perform the ***"file_search"*** action, where it searches through the contents of the vector store of the ***employee_handbook.pdf*** file.
             * For ***message_creation*** run steps, the agent role and its outputs are displayed in the ***Input & output*** section.  More information on the message creation can be found in the ***Metadata*** section.
-
+            
+![agent playground thread logs](../image/agentsplay02.png)
 
 
 ## Success Criteria
