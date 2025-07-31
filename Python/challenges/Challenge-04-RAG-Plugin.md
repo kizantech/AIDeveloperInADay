@@ -8,8 +8,6 @@ Retrieval Augmented Generation (RAG) is an AI architecture pattern that combines
 
 The RAG pattern is particularly valuable because it addresses two key limitations of large language models (LLMs): their potential to produce factually incorrect information (hallucinations) and their reliance on the data they were initially trained on, which may become outdated. By retrieving and incorporating up-to-date, relevant information from external sources, RAG systems can provide more current and accurate responses.
 
-## Description
-
 In RAG systems, the retrieval component typically involves searching a database, knowledge base, or other structured or unstructured data source to find information relevant to a given query. This retrieval can be based on traditional search techniques, keyword matching, or more sophisticated methods like semantic or vector search, which aim to capture the meaning behind the query rather than just matching specific terms.
 
 The retrieved information is then fed into the generative model as conditioning context along with the original query. This additional context helps the model to generate a response that is not only conversationally appropriate but also grounded in the retrieved information. The generative model might directly incorporate facts from the retrieved documents, paraphrase them, or use them as a reference to ensure the coherence and factual accuracy of its output.
@@ -62,7 +60,6 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 ## Objectives
 
 * Deploy Azure AI Search
-* Deploy Storage Account with CORS enabled
 * Use AI Foundry to deploy a Text Embedding model
 * Import documents
 * Create a Semantic Search Plugin to query the AI Search Index
