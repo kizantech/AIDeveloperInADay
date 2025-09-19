@@ -29,7 +29,7 @@ In this challenge, you will be working with a starter application that requires 
 
 3. In the `chat.py` file, locate the `initialize_kernel()` function and implement the code to create and add the Azure AI Foundry Chat Completion service to the kernel:
 
-    * Find the comment: `#Challenge 02 - Chat Completion Service`
+    * Find the comment: `Semantic-Kernel-Challenge - Chat Completion Service`
     * Create a chat completion service that uses the environment variables from your `.env` file
     * Add the service to the kernel
 
@@ -37,7 +37,7 @@ In this challenge, you will be working with a starter application that requires 
 
 ### Implement Chat
 
-1. In the `process_message()` function, find the comment `# Start Challenge 02 - Sending a message to the chat completion service by invoking kernel` and implement the following steps:
+1. In the `process_message()` function, find the comment `Start Semantic-Kernel-Challenge` and implement the following steps:
 
     * Retrieve the chat completion service from the kernel
     * Use the global chat history variable rather than creating a new one
