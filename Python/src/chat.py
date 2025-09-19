@@ -46,6 +46,7 @@ def initialize_kernel():
     # Semantic-Kernel-Challenge - Add Kernel
 
     # Semantic-Kernel-Challenge - Chat Completion Service
+    
     # Semantic-Kernel-Challenge - Add kernel to the chat completion service
 
     # RAG-Challenge - Add Text Embedding Service
