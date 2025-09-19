@@ -29,7 +29,7 @@ You will need to set up the necessary tools and resources on your local workstat
 1. Clone the git repository. You can do this by running the following command in your terminal or command prompt:
 
     ```console
-    git clone https://github.com/kizantech/AIDeveloperInADay-Private.git
+    git clone https://github.com/kizantech/AIDeveloperInADay.git
     ```
 
 1. Open VS Code
