@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Python: Streamlit App",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "module": "streamlit",
             "args": [
@@ -12,54 +12,21 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": false,
-            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "cwd": "${workspaceFolder}",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}"
+                "PYTHONPATH": "${workspaceFolder}/src"
             }
         },
         {
             "name": "Python: WorkItems API",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/src/workitems/api.py",
             "console": "integratedTerminal",
             "justMyCode": false,
-            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "cwd": "${workspaceFolder}",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            },
-            "presentation": {
-                "hidden": false,
-                "group": "Semantic Kernel",
-                "order": 2
-            }
-        },
-        {
-            "name": "Mac: Streamlit App",
-            "type": "python",
-            "request": "launch",
-            "module": "streamlit",
-            "args": [
-                "run",
-                "${workspaceFolder}/src/app.py"
-            ],
-            "console": "integratedTerminal",
-            "justMyCode": false,
-            "python": "${workspaceFolder}/.venv/bin/python",
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            }
-        },
-        {
-            "name": "Mac: WorkItems API",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/src/workitems/api.py",
-            "console": "integratedTerminal",
-            "justMyCode": false,
-            "python": "${workspaceFolder}/.venv/bin/python",
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
+                "PYTHONPATH": "${workspaceFolder}/src"
             },
             "presentation": {
                 "hidden": false,
@@ -80,28 +47,8 @@
             }
         },
         {
-            "name": "Challenge 2-3: Mac version",
-            "configurations": ["Mac: Streamlit App"],
-            "stopAll": true,
-            "presentation": {
-                "hidden": false,
-                "group": "Challenges",
-                "order": 1
-            }
-        },
-        {
             "name": "Challenge 4+: Run WorkItems API and App",
             "configurations": ["Python: WorkItems API", "Python: Streamlit App"],
-            "stopAll": true,
-            "presentation": {
-                "hidden": false,
-                "group": "Challenges",
-                "order": 2
-            }
-        },
-        {
-            "name": "Challenge 4+: Mac version",
-            "configurations": ["Mac: WorkItems API", "Mac: Streamlit App"],
             "stopAll": true,
             "presentation": {
                 "hidden": false,

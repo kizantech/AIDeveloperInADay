@@ -48,6 +48,8 @@ You will need to set up the necessary tools and resources on your local workstat
 
     Open the folder `AIDeveloperInADay` and then select the folder `Python` and open it
 
+    > Note: Open the `Python/` folder as your VS Code root so the `src/` folder and files like `app.py` are directly visible in the Explorer.
+
     Make sure in VS Code, your explorer looks similar to this
 
     ![VS Code explorer view](Resources/image/local-setup-03.png)
@@ -84,7 +86,7 @@ You will need to set up the necessary tools and resources on your local workstat
 
     ![VS Code launch profiles](Resources/image/local-setup-05.png)
 
-1. Run the launch profile `Challenge 2-3`
+1. Run the launch profile `Challenge 2-3: Run and Debug Streamlit App`
 
     That should launch the web chat app in your default browser and look something like this
 
@@ -100,7 +102,7 @@ You will need to set up the necessary tools and resources on your local workstat
 - Verify you have the following files & folders locally:
 
   ```text
-  ├─ python
+  ├─ Python
       └── .vscode
       └── src
         └─── plugins

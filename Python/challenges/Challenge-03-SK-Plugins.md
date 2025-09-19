@@ -11,7 +11,7 @@ Completed [Challenge 02](./Challenge-02-Semantic-Kernel.md) and have a functiona
 **Plugins are the key to unlocking your AI's true potential.** While large language models like GPT-4o are incredibly powerful, they have fundamental limitations: they can't access real-time information, don't know about your specific business data, and can't interact with external systems or APIs. This is where Semantic Kernel plugins come in.
 
 **What are Plugins?**
-Plugins are modular components that extend your AI's capabilities by connecting it to the real world. Think of them as "superpowers" that you can give your AI - each plugin teaches your AI how to perform a specific task or access a particular type of information.
+Plugins are modular components that extend your AI's capabilities by connecting it to the real world. Think of them as "superpowers" you can give your AI—each plugin teaches your AI how to perform a specific task or access a particular type of information.
 
 **Why are Plugins Game-Changing?**
 - **Real-time Data Access**: Your AI can fetch current weather, stock prices, or today's date
@@ -28,7 +28,7 @@ Semantic Kernel's Auto Function Calling feature automatically determines which p
 4. Combine all this information into a natural response
 
 **What You'll Build**
-In this challenge, you'll create two powerful plugins:
+In this challenge, you'll work with two powerful plugins. In many workshop environments, these plugins may already be provided in the `plugins/` folder so you can focus on Semantic Kernel concepts (registration, function calling, and orchestration) rather than boilerplate code. If a plugin is not present, you'll create it as described below.
 - **Time Plugin**: Enables your AI to work with dates, times, and temporal calculations
 - **Weather Plugin**: Connects your AI to real-time weather data from around the world
 
@@ -54,7 +54,7 @@ This challenge will introduce you to building Semantic Kernel Plugins in python,
 
     Let's fix this by creating a plugin that can provide the current time and other related information.
 
-* **Create a new class in *./plugins* directory for your Time Plugin**. You can reference the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-python#defining-a-plugin-using-a-class) for more information on how to create a plugin using a class.
+* **Use or create a Time Plugin in the *./plugins* directory.** If a Time plugin is already provided in `plugins/`, use it so you can focus on registration and automatic function calling. If it is not present, create it following the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-python#defining-a-plugin-using-a-class).
   * Write a time plugin with the following functions:
     1. Return the current Date Time
     1. Return the Year for a date passed in as a parameter
@@ -66,7 +66,7 @@ This challenge will introduce you to building Semantic Kernel Plugins in python,
 
   * Enable Automatic Function Calling
 
-      In `chat.py` below the comment `# Challenge 03 - Create Prompt Execution Settings` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-python#using-automatic-function-calling).
+      In `chat.py`, configure Automatic Function Calling near the `SK-Plugins-Challenge` sections where you add your plugins (e.g., `# SK-Plugins-Challenge - Add Time Plugin`, `# SK-Plugins-Challenge - Add Geo Plugin`, `# SK-Plugins-Challenge - Add Weather Plugin`). This ensures your plugin functions are available and discoverable when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-python#using-automatic-function-calling).
 
   * Test the AI by launching the application and asking the bot
   
@@ -81,6 +81,8 @@ This challenge will introduce you to building Semantic Kernel Plugins in python,
     ```
 
     See the [Success Criteria](#success-criteria) section for additional questions to test your Time Plugin.
+
+> Advanced (Optional): If a Time plugin is already provided, try building your own version from scratch in `plugins/` with a different function set (for example, returning ISO8601 timestamps or formatting dates for specific locales), then register it in `chat.py` and observe how Automatic Function Calling selects between functions.
 
 * **Review the `geo_coding_plugin.py` file located in the ***plugins*** directory**
   * Register for a free API key from [Geocoding API](https://geocode.maps.co/) to use in the plugin

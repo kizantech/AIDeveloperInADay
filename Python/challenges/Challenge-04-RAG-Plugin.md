@@ -90,13 +90,13 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 
 1. Navigate back to the reference application and open the **chat.py** file. Register the service for Azure AI Foundry Text Embedding Generation with the Kernel.
 
-    :bulb: As an example, look at how you registered the AzureOpenAIChatCompletion service. Also note the 3 variables you added to the .env file: EMBEDDINGS_DEPLOYMODEL, AOI_ENDPOINT, AOI_API_KEY.
+    :bulb: As an example, look at how you registered the `AzureChatCompletion` service. Also note the 3 variables you added to the `.env` file: `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME`, `AZURE_OPENAI_ENDPOINT`, `AZURE_OPENAI_API_KEY`.
 
 1. We will be using the *Azure AI Search Vector Store connector*. The plugin has already been provided for you in your plugins folder.
 
      >This is the Semantic Search Plugin to query the AI Search Index created earlier. This Plugin should take the users query and generate an embedding using the Text Embedding model. The embedding should then be used to query the AI Search Index containing the Contoso Handbook PDF and return the most relevant information.
 
-    :bulb: Note the 2 environment variables you added to the .env file: AZURE_AI_SEARCH_ENDPOINT, AZURE_AI_SEARCH_KEY.
+    :bulb: Note the 2 environment variables you added to the `.env` file: `AZURE_AI_SEARCH_ENDPOINT`, `AZURE_AI_SEARCH_API_KEY`.
 
 1. The Sample RAG Plugin in the documentation maps the incoming data from AI Search to a class named `EmployeeHandbookModel`.
 
