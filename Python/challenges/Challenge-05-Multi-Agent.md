@@ -30,7 +30,7 @@ By completing this challenge, you will learn:
 
 ## Implementation Requirements
 
-Work in the `multi_agent_student.py` file to implement a multi-agent system with the following components:
+Work in the `multi_agent.py` file to implement a multi-agent system with the following components:
 
 ### Required Components
 
@@ -148,7 +148,7 @@ Remember: You are the quality gate - only approve work that truly meets all requ
 
 ## Acceptance Criteria
 
-Complete the following requirements in `multi_agent_student.py`:
+Complete the following requirements in `multi_agent.py`:
 
 ### ✅ Agent Creation
 - [ ] Create three ChatCompletionAgent instances with the above personas

@@ -27,17 +27,20 @@ In this challenge, you will be working with a starter application that requires 
     
     > **Important:** According to the [Semantic Kernel documentation](https://github.com/microsoft/semantic-kernel/blob/main/python/samples/concepts/setup/ALL_SETTINGS.md), these environment variables are specifically required for the AzureChatCompletion service. Semantic Kernel will automatically look for these variables when initializing the service. As you work through subsequent challenges, you'll add more environment variables to this same `.env` file to support additional AI services.
 
+    > **Tip:** Place the `.env` file at `student/Python/src/.env`. On startup, `src/chat.py` prints the path it loaded and the presence of required variables, which helps verify your configuration quickly.
+
 3. In the `chat.py` file, locate the `initialize_kernel()` function and implement the code to create and add the Azure AI Foundry Chat Completion service to the kernel:
 
-    * Find the comment: `#Challenge 02 - Chat Completion Service`
-    * Create a chat completion service that uses the environment variables from your `.env` file
-    * Add the service to the kernel
+    * Find the comment: `Semantic-Kernel-Challenge - Chat Completion Service`
+    * Define your kernel under the comment: `Semantic-Kernel-Challenge - Add Kernel`
+    * Create a chat completion service that uses the environment variables from your `.env` file. Do this under the comment: `Semantic-Kernel-Challenge - Chat Completion Service`
+    * Add the service to the kernel under the comment: `Semantic-Kernel-Challenge - Add kernel to the chat completion service`
 
     :bulb: Review the [Semantic Kernel documentation on chat completion services](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/?tabs=csharp-AzureOpenAI%2Cpython-AzureOpenAI%2Cjava-AzureOpenAI&pivots=programming-language-python#creating-a-chat-completion-service) to understand how to properly initialize the service.
 
 ### Implement Chat
 
-1. In the `process_message()` function, find the comment `# Start Challenge 02 - Sending a message to the chat completion service by invoking kernel` and implement the following steps:
+1. In the `process_message()` function, find the comment `Start Semantic-Kernel-Challenge` and implement the following steps:
 
     * Retrieve the chat completion service from the kernel
     * Use the global chat history variable rather than creating a new one
@@ -47,7 +50,7 @@ In this challenge, you will be working with a starter application that requires 
     * Add the AI's response to the chat history
     * Return the AI response
 
-    :bulb: The [Chat Completion documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/?tabs=python-AzureOpenAI%2Cpython-AzureOpenAI%2Cjava-AzureOpenAI&pivots=programming-language-python#using-chat-completion-services) provides examples of how to properly call the service.
+    :bulb: The [Chat Completion documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/?tabs=python-AzureOpenAI%2Cjava-AzureOpenAI&pivots=programming-language-python#using-chat-completion-services) provides examples of how to properly call the service.
 
     :bulb: Review the [Chat History documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/chat-history?pivots=programming-language-python#creating-a-chat-history-object) to understand how to properly manage the conversation context.
 
