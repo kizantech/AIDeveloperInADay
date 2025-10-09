@@ -19,7 +19,7 @@ Before diving into debugging and running the application, let's understand what 
 
    ```python
    def initialize_kernel():
-       #Challenge 02 - Add Kernel
+       # Semantic-Kernel-Challenge - Add Kernel
        kernel = Kernel()
    ```
 
