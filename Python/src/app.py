@@ -307,12 +307,7 @@ def main():
         layout="wide",
         initial_sidebar_state="expanded",
     )
-
-    # (Removed heavy theme CSS here). Theme is applied by final minimal override below.
-
-    # Final minimal theming override (simplified):
-    # - Sidebar elements transparent
-    # - Only background (bg) and text (fg) colors change per theme
+    # Minimal theming override (simplified):
     if st.session_state.get("theme", "Dark") == "Dark":
         st.markdown(
             """
@@ -321,7 +316,7 @@ def main():
             html, body { background-color: var(--bg) !important; }
             .stApp { background-color: var(--bg) !important; color: var(--fg) !important; }
             /* Sidebar transparency */
-            [data-testid="stSidebar"], section[data-testid="stSidebar"] > div { background: transparent !important; }
+            .stSidebar { background: transparent !important; }
             /* Header/Footer */
             [data-testid="stHeader"], [data-testid="stDecoration"] { background: var(--bg) !important; border-bottom: 1px solid #374151; }
             [data-testid="stFooter"], footer { background: var(--bg) !important; border-top: 1px solid #374151; }
@@ -382,7 +377,7 @@ def main():
             html, body { background-color: var(--bg) !important; color: var(--fg) !important; }
             .stApp { background-color: var(--bg) !important; color: var(--fg) !important; }
             /* Sidebar transparency */
-            [data-testid="stSidebar"], section[data-testid="stSidebar"] > div { background: #ffffff !important; }
+            .stSidebar { background: #ffffff !important; }
             /* Header & footer */
             [data-testid="stHeader"], [data-testid="stDecoration"] { background: #ffffff !important; border-bottom: 1px solid #e5e7eb; color: #000000 !important;}
             [data-testid="stToolbar"], [data-testid="stBottomBlockContainer"], footer { background: #ffffff !important; border-top: 1px solid #e5e7eb; color: #000000 !important;}
