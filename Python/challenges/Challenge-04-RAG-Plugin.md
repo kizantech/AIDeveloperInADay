@@ -68,14 +68,13 @@ Together, chunked handbook content indexed with embeddings makes it possible for
 
 > **Setup Guide:** If you still need to provision Azure AI Search or import the handbook data, follow [`Resources/Supporting Challenges/Setup-RAG.md`](../Resources/Supporting%20Challenges/Setup-RAG.md) before proceeding.
 
+With these prerequisites met, you're ready to capture the connection details from your Azure AI Search resource.
+
 ## Objectives
 
-* Deploy Azure AI Search
-* Use AI Foundry to deploy a Text Embedding model
-* Import documents
+* Connect to Azure AI Search
+* Use AI Foundry to connect to a Text Embedding model
 * Create a Semantic Search Plugin to query the AI Search Index
-
-With these prerequisites met, you're ready to capture the connection details from your Azure AI Search resource.
 
 ## Getting your URL, Key and Index Name
 
