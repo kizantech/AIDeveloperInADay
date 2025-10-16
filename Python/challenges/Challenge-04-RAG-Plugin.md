@@ -4,7 +4,11 @@
 
 ## Introduction
 
-Retrieval Augmented Generation (RAG) is an AI architecture pattern that combines retrieval mechanisms with generative AI models to produce more accurate, relevant, and contextually-appropriate responses. In a RAG system, when a query is received, the system first retrieves relevant information from a knowledge base or external data source. This retrieved information is then used to augment or condition the input to a generative AI model, enhancing its ability to provide accurate and comprehensive responses.
+Contoso’s HR team needs the chatbot to answer questions that live only in the employee handbook—there’s no public API they can call. Rather than hard-code responses, you’ll extend the plugin system you built in Challenge 03 so the assistant can search those internal documents on demand.
+
+Retrieval Augmented Generation (RAG) solves this by combining fast document retrieval with powerful generative models. After you surface the right handbook context, the chat model can ground its answer in that source instead of guessing.
+
+RAG is an AI architecture pattern that combines retrieval mechanisms with generative AI models to produce more accurate, relevant, and contextually-appropriate responses. In a RAG system, when a query is received, the system first retrieves relevant information from a knowledge base or external data source. This retrieved information is then used to augment or condition the input to a generative AI model, enhancing its ability to provide accurate and comprehensive responses.
 
 The RAG pattern is particularly valuable because it addresses two key limitations of large language models (LLMs): their potential to produce factually incorrect information (hallucinations) and their reliance on the data they were initially trained on, which may become outdated. By retrieving and incorporating up-to-date, relevant information from external sources, RAG systems can provide more current and accurate responses.
 
@@ -43,25 +47,33 @@ Embedding models are a way to represent complex data, like words or images, as n
 
 **Usage**: These embeddings are used in tasks like translating languages, finding similar items (like in a recommendation system), or even understanding sentences.
 
-In essence, embedding models take something complex (like words or images) and turn them into a simple, consistent format (numbers) that machines can work with.
+In essence, embedding models take something complex (like words or images) and turn them into a simple, consistent format (numbers) that machines can work with. In your plugin, these embeddings let Azure AI Search understand the intent behind “Who approves remote work?” and match it to the correct handbook passages even when the wording differs.
 
 ### Document Chunking
 
 Document chunking is a technique used in AI, especially in Retrieval-Augmented Generation (RAG) models, to break down large documents into smaller, manageable pieces or "chunks." This makes it easier for the AI to process the relevant information. Imagine you have a long book and you want to find specific information quickly. Instead of reading the entire book, you divide it into chapters or sections. Each chunk can then be indexed and searched individually, making the retrieval process faster and more efficient.
 
-In the context of RAG, these chunks are used to enhance the AI's ability to generate accurate and contextually relevant responses. When a query is made, the retrieval mechanism searches through these smaller chunks to find the most relevant information, which the model then uses to generate a coherent and informative answer. This method improves the performance and accuracy of AI models by ensuring they have access to the most pertinent data without being overwhelmed by the volume of information.
-
-## Prerequisites
-
-Completed at least [Challenge 03](./Challenge-03-SK-Plugins.md) and have a functional version of the solution running and a good understanding of plugins.
+In the context of RAG, these chunks are used to enhance the AI's ability to generate accurate and contextually relevant responses. When a query is made, the retrieval mechanism searches through these smaller chunks to find the most relevant information, which the model then uses to generate a coherent and informative answer. This method improves the performance and accuracy of AI models by ensuring they have access to the most pertinent data without being overwhelmed by the volume of information. For the Contoso handbook, chunking ensures the search results come back as precise policy snippets that the chatbot can cite in its response.
 
 In this challenge, you will create a Semantic Search Plugin that utilizes an Azure AI Search Index to retrieve information from the Contoso Handbook PDF. The purpose of the plugin is to enable the AI Model to answer questions about your own documents. We achieve this by converting the user's query into an embedding using a Text Embedding model. The embedding is then used to search the AI Search Index for the most relevant information.
 
+Together, chunked handbook content indexed with embeddings makes it possible for your RAG plugin to retrieve grounded data and feed it into the chatbot—bridging the gap when no API exists.
+
+## Prerequisites
+
+- Completed at least [Challenge 03](./Challenge-03-SK-Plugins.md) and have the reference application running locally.
+- Access to an Azure subscription or pre-deployed workshop environment that can host Azure AI Search, Azure Storage, and Azure AI Foundry resources.
+- A deployed text embedding model (for example, `text-embedding-ada-002`) available in Azure AI Foundry.
+- An Azure AI Search index named `employeehandbook` containing the Contoso Handbook data.
+
+> **Setup Guide:** If you still need to provision Azure AI Search or import the handbook data, follow [`Resources/Supporting Challenges/Setup-RAG.md`](../Resources/Supporting%20Challenges/Setup-RAG.md) before proceeding.
+
+With these prerequisites met, you're ready to capture the connection details from your Azure AI Search resource.
+
 ## Objectives
 
-* Deploy Azure AI Search
-* Use AI Foundry to deploy a Text Embedding model
-* Import documents
+* Connect to Azure AI Search
+* Use AI Foundry to connect to a Text Embedding model
 * Create a Semantic Search Plugin to query the AI Search Index
 
 ## Getting your URL, Key and Index Name
