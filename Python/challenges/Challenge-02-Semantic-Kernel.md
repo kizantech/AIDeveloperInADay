@@ -14,7 +14,7 @@ In this challenge, you will be working with a starter application that requires 
 
 1. Deploy a GPT-4o model using [Azure AI Foundry](https://ai.azure.com). The **Deployment name** should be something similar to `gpt-4o`. This name will be needed next when configuring Semantic Kernel. :exclamation: Deployment type should be **Standard**. :exclamation:
 
-2. Create a new `.env` file in the `src` directory with the Azure AI Foundry configuration values:
+2. Copy `student/Python/src/.env_template` to a new file named `.env` in the same directory, then populate the Azure AI Foundry configuration values:
 
     ```
     AZURE_OPENAI_CHAT_DEPLOYMENT_NAME="your-deployment-name"
@@ -25,8 +25,8 @@ In this challenge, you will be working with a starter application that requires 
 
     > **Note:** For the endpoint URL, only include up to the `.com` part as the SDK will build the full URL.
     
-    > **Important:** According to the [Semantic Kernel documentation](https://github.com/microsoft/semantic-kernel/blob/main/python/samples/concepts/setup/ALL_SETTINGS.md), these environment variables are specifically required for the AzureChatCompletion service. Semantic Kernel will automatically look for these variables when initializing the service. As you work through subsequent challenges, you'll add more environment variables to this same `.env` file to support additional AI services.
-
+    > **Important:** The template contains placeholders for every variable you'll need throughout the workshop. Leave unused entries blank for now and fill them in as later challenges reference additional services.
+    
     > **Tip:** Place the `.env` file at `student/Python/src/.env`. On startup, `src/chat.py` prints the path it loaded and the presence of required variables, which helps verify your configuration quickly.
 
 3. In the `chat.py` file, locate the `initialize_kernel()` function and implement the code to create and add the Azure AI Foundry Chat Completion service to the kernel:

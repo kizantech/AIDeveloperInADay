@@ -96,6 +96,8 @@ This challenge will introduce you to building Semantic Kernel Plugins in python,
   GEOCODING_API_KEY="your-geocoding-api-key"
   ```
 
+  > **Reminder:** This is the `.env` file you copied from `.env_template` in Challenge 02. Keep using that same file and fill in new values as each challenge requires.
+
   * Register the Plugin
 
   * Run the application and test the Geocoding plugin by submitting the following prompt:
