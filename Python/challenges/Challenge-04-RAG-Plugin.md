@@ -126,9 +126,9 @@ With these prerequisites met, you're ready to capture the connection details fro
 
     The properties on this class map to fields in the AI Search Index we created earlier. In the portal, you can navigate to the AI Search Index and see the fields that are available.
 
-    ![AI Search](./Resources/image/ch05img8.png)
+    ![AI Search](./Resources/image/ch04img8.png)
 
-1. Add the plugin to Semantic Kernel in chat.py
+1. Add the AI Search plugin to Semantic Kernel in chat.py
 
     Below is the workflow handled by Semantic Kernel and your plugin:
 
