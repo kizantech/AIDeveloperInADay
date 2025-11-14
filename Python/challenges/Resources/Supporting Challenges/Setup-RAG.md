@@ -34,13 +34,13 @@
 
     1. Click **Save**.
 
-    ![CORS](../image/ch05img1.png)
+    ![CORS](../image/ch04img1.png)
 
 ### Use AI Foundry to deploy a Text Embedding model
 
 1. Using [Azure AI Foundry](https://ai.azure.com/resource/deployments), deploy a *Standard* **text-embedding-ada-002** model in the same deployment as your previous GPT-4o model. 
 
-    ![Embedding Model](../image/ch05img2.png)
+    ![Embedding Model](../image/ch04img2.png)
 
 ## Environment Setup
 
@@ -60,17 +60,17 @@ Ensure all required settings are properly configured before proceeding to the ne
 
 1. In Azure AI Foundry click on Playground -> Chat Playground
 
-    ![Add Data Source](../image/ch05img0.png)
+    ![Add Data Source](../image/ch04img0.png)
 
 1. Ensure the correct model is selected under Deployment. Then click the drop down Add your data -> Add new data source
 
-    ![Add Data Source](../image/ch05img3.png)
+    ![Add Data Source](../image/ch04img3.png)
 
-1. Select Data Source = ```Upload Files```.
+1. Select Data Source = ```Upload Files```. Then upload the ```employeehandbook.pdf``` file.
 
-    ![Upload Files](../image/ch05img4.png)
+    ![Upload Files](../image/ch04img4.png)
 
-1. Choose the **AI Search Resource** setup in the previous step.
+1. Select Your Azure AI Search Service
 1. For the Index Name use:
 
     ```text
@@ -79,23 +79,15 @@ Ensure all required settings are properly configured before proceeding to the ne
 
     > :bulb: The AI Search Index Name will be needed by the reference application
 
-1. Click Next
+    ![Vector Search](../image/ch04img5.png)
 
-    ![Vector Search](../image/ch05img5.png)
-
-1. Check **Add Vector Search**
 1. Select your Azure OpenAI connection
 1. Select the **text-embedding-ada-002** model
 1. Select your **text-embedding-ada-002** model deployment that was created previously
 
-  <!-- > :bulb: Chunk size refers to how much text is grouped together into a single segment or "chunk" before creating an embedding. When processing large documents, the text is often divided into smaller chunks to create embeddings for each segment. The chunk size determines how much text is included in each embedding.
-  >
-  > Choosing the right chunk size is important: if chunks are too large, important details might get lost or diluted in the embedding; if too small, the system might miss out on essential context. The chunk size thus impacts the accuracy and relevance of the information retrieved and subsequently used in generating responses
+    ![Vector Search](../image/ch04img6.png)
 
-  ![Chunk Size](./Resources/image/ch05img6.png) -->
-<!-- 
-1. Set the Resource Authentication Type to **API Key**
 
-    ![Api Key](./Resources/image/ch05img7.png)
+1. Click ```Create vector index```
 
-    :repeat: Click **Next** and wait for the import to finish -->
+    ![Vector Search](../image/ch04img7.png)
