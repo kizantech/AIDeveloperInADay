@@ -25,7 +25,7 @@ In this challenge, you will be working with a starter application that requires 
 
     > **Note:** For the endpoint URL, only include up to the `.com` part as the SDK will build the full URL.
 
-    > **Note:** For the API Version, navigate to your deployment under `Models + Endpoints` and get the API version from the end of the `Target URI`
+    > **Note:** For the API Version, navigate to your deployment under `Models + Endpoints` and get the API version from the end of the `Target URI`.
     
     > **Important:** The template contains placeholders for every variable you'll need throughout the workshop. Leave unused entries blank for now and fill them in as later challenges reference additional services.
     
